@@ -7,7 +7,7 @@ In addition to implementing the core gameplay mechanics, we will also be experim
 
 # License
 
-This project is licensed under the MIT License - see the LICENSE file for details. Feel free to use and modify the code for your own learning purposes.
+This project is licensed under the MIT License. Feel free to use and modify the code for your own learning purposes.
 
 # How to play
 
@@ -49,7 +49,7 @@ Inoltre, oltre ad implementare i meccanismi di gioco principali, esploreremo anc
 
 # Licenza
 
-Questo progetto è concesso in licenza con MIT License - vedi il file LICENSE per maggiori dettagli. Sentiti libero di utilizzare e modificare il codice per i tuoi scopi di apprendimento.
+Questo progetto è concesso in licenza con MIT License. Sentiti libero di utilizzare e modificare il codice per i tuoi scopi di apprendimento.
 
 # Come giocare
 
