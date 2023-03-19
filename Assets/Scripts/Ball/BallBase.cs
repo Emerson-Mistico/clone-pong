@@ -48,7 +48,7 @@ public class BallBase : MonoBehaviour
         ballCanMove(false);
         ballSpeed = _startBallSpeed;
 
-        // Verifica quem fez o ponto para a vantagem e sentido do disparo inicial
+        // Check who made the point for the advantage and direction of the initial shot of the ball
         if (currentWay != wayToCheck)
         {
             ballSpeed.x *= -1;
@@ -62,7 +62,7 @@ public class BallBase : MonoBehaviour
         ballCanMove(true);
     }
 
-    // Verifica se a colisão é com o Player para inverter o sentido
+    // Checks if the collision is with a player to reverse the direction
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.tag == keyToCheck)
@@ -74,7 +74,7 @@ public class BallBase : MonoBehaviour
         }
     }
 
-    // Altera de maneira aleatória dentro de um range a velocidade da bola
+    // Randomly changes the speed of the ball (within an established range)
     private void OnPlayerCollision()
     {
         ballSpeed.x *= -1;
@@ -88,8 +88,7 @@ public class BallBase : MonoBehaviour
             ballSpeed.x = rand;
         }
 
-        /* Prefiro a jogabilidade sem esta opção por enquanto.
-         * 
+        /* 
          * rand = Random.Range(randSpeedY.x, randSpeedY.y);
          * ballSpeed.y = rand;
          */

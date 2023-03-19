@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class StateMachine : MonoBehaviour
 {
-    // Tornar a StateMachine um singleton (precisei ;-))
+    // StateMachine to singleton
     public static StateMachine Instance;
 
     public enum States
@@ -17,7 +17,7 @@ public class StateMachine : MonoBehaviour
         END_GAME
     }
 
-    //Chave
+    // Key
     public Dictionary<States, StateBase> dictionaryState;
         
     private StateBase _currentState;
@@ -26,12 +26,10 @@ public class StateMachine : MonoBehaviour
 
     private void Awake()
     {
-        // Cria a instancia do StateMachine (Singleton)
+        // Instanciate StateMachine (Singleton)
         Instance = this;
 
-        // Debug.Log("State Machine em Awake");
         dictionaryState = new Dictionary<States, StateBase>();
-
         dictionaryState.Clear();
         dictionaryState.Add(States.START_GAME, new StateStartGame());
         dictionaryState.Add(States.MENU, new StateMenu());
@@ -47,9 +45,7 @@ public class StateMachine : MonoBehaviour
     private void Update()
     {
         
-        if (Input.GetKeyDown(KeyCode.Escape) 
-            && (_currentState.ToString() != "StatePause") 
-            && (_currentState.ToString() != "StateMenu"))
+        if (Input.GetKeyDown(KeyCode.Escape) && (_currentState.ToString() != "StatePause") && (_currentState.ToString() != "StateMenu"))
         {
             Debug.Log("Apertou Scape: Entrar na PAUSA");
             SwitchState(States.PAUSE);
@@ -59,15 +55,9 @@ public class StateMachine : MonoBehaviour
             Debug.Log("Apertou Scape: Sair da PAUSA");
             SwitchState(States.RESUME_GAME);
         } 
-        else if (Input.GetKeyDown(KeyCode.M))
+        else if (_currentState.ToString() == "StateStartGame")
         {
-            Debug.Log("Apertou Scape: Entrar no MENU");
             SwitchState(States.MENU);
-        }        
-        else if (Input.GetKeyDown(KeyCode.Q)) 
-        {
-            Debug.Log("Apertou Q: Tela final/sair");
-            SwitchState(States.END_GAME);
         }
     }
 

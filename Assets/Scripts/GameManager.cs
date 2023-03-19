@@ -6,9 +6,8 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
     
-    // Torna um singleton para acesar de todo lugar
-    public static GameManager Instance;
-    //public StateMachine stateMachine;
+    // GameManager to singleton
+    public static GameManager Instance;    
 
     public BallBase ballBase;
 
@@ -19,7 +18,7 @@ public class GameManager : MonoBehaviour
     // Start is called before the first frame update
     private void Awake()
     {
-        // Cria a instancia do GameManager (Singleton)
+        // Instanciate GameManager (Singleton)
         Instance = this;
     }
 
@@ -30,24 +29,22 @@ public class GameManager : MonoBehaviour
 
     public void ShowMainMenu()
     {
-        Debug.Log("ShowMainMenu: Ativo");
         ballBase.ballCanMove(false);
         uiMainMenu.SetActive(true);
     }
 
     public void ShowPauseMenu()
     {
-        Debug.Log("ShowMainMenu: Ativo");
         ballBase.ballCanMove(false);
         uiPauseMenu.SetActive(true);
     }
 
     public void ResumeGame()
     {
-        Debug.Log("ResumeGame: Ativo");
         uiPauseMenu.SetActive(false);
         uiMainMenu.SetActive(false);
-        // ballBase.ballCanMove(true);
+        ballBase.ballCanMove(true);
+        StateMachine.Instance.SwitchState(StateMachine.States.PLAYING);
     }
 
     public void ResetBallPosition(string currentWay)
