@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 [RequireComponent (typeof(Image))]
 
@@ -11,6 +12,8 @@ public class ButtonColorBase : MonoBehaviour
 
     [Header ("References")]
     public Image uiImage;
+    public Player myPlayer;
+    public TextMeshProUGUI uiPlayerName;
 
     public void OnValidate()
     {
@@ -20,5 +23,11 @@ public class ButtonColorBase : MonoBehaviour
     void Start()
     {
         uiImage.color = colorToChange;
+    }
+
+    public void OnClick()
+    {
+        myPlayer.ChangeColor(colorToChange);
+        uiPlayerName.color = colorToChange;
     }
 }

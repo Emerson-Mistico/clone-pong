@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using TMPro;
 
 public class Player : MonoBehaviour
@@ -8,6 +9,7 @@ public class Player : MonoBehaviour
 
     [Header("Player Settings")]
     public float playerSpeed = 1.5f;
+    public Image uiPlayer;
 
     public Rigidbody2D myRigidbody2D;
 
@@ -41,6 +43,11 @@ public class Player : MonoBehaviour
     {
         currentPoints++;
         hudPointsToShow.text = currentPoints.ToString();
+    }
+
+    public void ChangeColor(Color colorToChange)
+    {
+        uiPlayer.color = colorToChange;
     }
 
     private void ResetPlayer()
