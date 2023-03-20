@@ -71,7 +71,8 @@ public class StateEndGame: StateBase
 {
     public override void OnStateEnter(object obj = null)
     {
-        //Debug.Log("Current state: END GAME");
-        base.OnStateEnter();
+        Debug.Log("Current state: END GAME");
+        // base.OnStateEnter();
+        Application.Quit();
     }
 }
