@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using TMPro;
 
 public class GameManager : MonoBehaviour
 {
@@ -12,23 +13,55 @@ public class GameManager : MonoBehaviour
 
     [Header ("Game Settings")]
     public BallBase ballBase;
-    public int pointsToWin = 3;
+    public int defaultPointsToWin = 3;
+    public TMP_InputField inputFieldPointsToWin;
 
-    [Header("Menu Settings")]
+    public string defaultPlayerName1 = "Jogador 1";
+    public string defaultPlayerName2 = "Jogador 2";
+
+    [Header ("HUD References")]
+    public TextMeshProUGUI hudPlayerName1;
+    public TextMeshProUGUI hudPlayerName2;
+
+    [Header("Menu Settings References")]
     public GameObject uiMainMenu;
     public GameObject uiPauseMenu;
     public GameObject uiSettingsMenu;
+    public GameObject uiEndGameMenu;
+
+    private string _currentPointsToWin;
+    private string _lastWinner = "Sem vencedor";
 
     // Start is called before the first frame update
     private void Awake()
     {
         // Instanciate GameManager (Singleton)
         Instance = this;
+
+        inputFieldPointsToWin.text = defaultPointsToWin.ToString();
+        PlayerPrefs.SetInt("pointsToWin", defaultPointsToWin);
+        PlayerPrefs.SetString("lastWinner", _lastWinner);
+
+        hudPlayerName1.text = defaultPlayerName1.ToString();
+        hudPlayerName2.text = defaultPlayerName2.ToString();
+
+    }
+
+    public void DoChangePointsToWin()
+    {
+        _currentPointsToWin = inputFieldPointsToWin.text;
     }
 
     public void StartGame()
     {
         ballBase.ballCanMove(true);
+    }
+
+    public void EndGame(string winnerPlayer)
+    {
+        PlayerPrefs.SetString("lastWinner", winnerPlayer);
+        ballBase.ballCanMove(false);
+        StateMachine.Instance.SwitchState(StateMachine.States.END_GAME);
     }
 
     public void ResetGame()
@@ -39,7 +72,7 @@ public class GameManager : MonoBehaviour
 
     public void QuitGame()
     {
-        StateMachine.Instance.SwitchState(StateMachine.States.END_GAME);
+        StateMachine.Instance.SwitchState(StateMachine.States.QUIT_GAME);
     }
 
     public void ShowMainMenu()
@@ -57,6 +90,10 @@ public class GameManager : MonoBehaviour
     public void ShowSettingsMenu()
     {
         uiSettingsMenu.SetActive(true);
+    }
+    public void ShowEndGameMenu()
+    {
+        uiEndGameMenu.SetActive(true);
     }
 
     public void ResumeGame()

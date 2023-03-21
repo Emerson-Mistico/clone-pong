@@ -13,12 +13,14 @@ public class BallBase : MonoBehaviour
     public Vector2 randSpeedX = new Vector2(0.15f, 1.3f);
 
     [Header("Ball Colision Setiings")]
+    public Player playerToCheck;
     public string keyToCheck = "Player";
     public string wayToCheck = "Player 1";
 
     private Vector3 _startPosition;
     private Vector3 _startBallSpeed;
     private bool _ballCanMove = false;
+    
 
     private void Awake()
     {
@@ -32,6 +34,7 @@ public class BallBase : MonoBehaviour
         if (_ballCanMove)
         {
             transform.Translate(ballSpeed);
+            wayToCheck = playerToCheck.name;
         } else
         {
             return;
@@ -40,7 +43,7 @@ public class BallBase : MonoBehaviour
 
     public void ballCanMove(bool state)
     {
-        _ballCanMove=state;
+        _ballCanMove = state;
     }
 
     public void ResetBall(string currentWay)
@@ -87,13 +90,6 @@ public class BallBase : MonoBehaviour
         {
             ballSpeed.x = rand;
         }
-
-        /* 
-         * rand = Random.Range(randSpeedY.x, randSpeedY.y);
-         * ballSpeed.y = rand;
-         */
-
     }
-
-    
+       
 }

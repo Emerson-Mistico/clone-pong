@@ -39,10 +39,12 @@ public class Player : MonoBehaviour
         }
     }
 
-    public void AddPoint()
+    public int AddPoint()
     {
         currentPoints++;
         hudPointsToShow.text = currentPoints.ToString();
+
+        return currentPoints;
     }
 
     public void ChangeColor(Color colorToChange)

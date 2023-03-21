@@ -14,7 +14,8 @@ public class StateMachine : MonoBehaviour
         PLAYING,
         PAUSE,
         RESUME_GAME,
-        END_GAME
+        END_GAME,
+        QUIT_GAME
     }
 
     // Key
@@ -37,6 +38,7 @@ public class StateMachine : MonoBehaviour
         dictionaryState.Add(States.PAUSE, new StatePause());
         dictionaryState.Add(States.RESUME_GAME, new StateResume());
         dictionaryState.Add(States.END_GAME, new StateEndGame());
+        dictionaryState.Add(States.QUIT_GAME, new StateQuitGame());
 
         SwitchState(States.START_GAME);
 
@@ -47,12 +49,12 @@ public class StateMachine : MonoBehaviour
         
         if (Input.GetKeyDown(KeyCode.Escape) && (_currentState.ToString() != "StatePause") && (_currentState.ToString() != "StateMenu"))
         {
-            Debug.Log("Apertou Scape: Entrar na PAUSA");
+            // Pause game at anytime
             SwitchState(States.PAUSE);
         } 
         else if (Input.GetKeyDown(KeyCode.Escape))
         {
-            Debug.Log("Apertou Scape: Sair da PAUSA");
+            // Quit Pause or Menu and resume game
             SwitchState(States.RESUME_GAME);
         } 
         else if (_currentState.ToString() == "StateStartGame")
