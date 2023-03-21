@@ -14,11 +14,10 @@ public class ChangeName : MonoBehaviour
     public Player player;
 
     private string playerName;
-    
-    // Start is called before the first frame update
-    void Start()
+
+    private void Awake()
     {
-        
+        uiTextName.text = player.name;
     }
 
     public void DoChangeName()

@@ -768,21 +768,33 @@ PrefabInstance:
       propertyPath: m_text
       value: GANHOU O JOGO !
       objectReference: {fileID: 0}
+    - target: {fileID: 1233194245023275534, guid: 9e50d5332210c634193fba6763550342, type: 3}
+      propertyPath: m_fontStyle
+      value: 17
+      objectReference: {fileID: 0}
+    - target: {fileID: 1233194245023275535, guid: 9e50d5332210c634193fba6763550342, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 1233194245023275535, guid: 9e50d5332210c634193fba6763550342, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1233194245023275535, guid: 9e50d5332210c634193fba6763550342, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 1233194245023275535, guid: 9e50d5332210c634193fba6763550342, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 0
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 1233194245023275535, guid: 9e50d5332210c634193fba6763550342, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: -0.15002
       objectReference: {fileID: 0}
     - target: {fileID: 1233194245023275535, guid: 9e50d5332210c634193fba6763550342, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -99.545
       objectReference: {fileID: 0}
     - target: {fileID: 1233194245533867619, guid: 9e50d5332210c634193fba6763550342, type: 3}
       propertyPath: m_Pivot.x
@@ -1530,6 +1542,10 @@ PrefabInstance:
     - target: {fileID: 2680888424711448020, guid: dda4781456994754085870db0da37f3d, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: -89.1494
+      objectReference: {fileID: 0}
+    - target: {fileID: 3009756856814031179, guid: dda4781456994754085870db0da37f3d, type: 3}
+      propertyPath: m_Name
+      value: Name Player 1
       objectReference: {fileID: 0}
     - target: {fileID: 5082486128206951688, guid: dda4781456994754085870db0da37f3d, type: 3}
       propertyPath: player
@@ -4927,7 +4943,7 @@ MonoBehaviour:
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 1
+  m_fontStyle: 17
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
   m_textAlignment: 65535
@@ -5054,8 +5070,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ballBase: {fileID: 897504838}
-  defaultPointsToWin: 3
   inputFieldPointsToWin: {fileID: 1273495526}
+  defaultPointsToWin: 3
   defaultPlayerName1: Jogador 1
   defaultPlayerName2: Jogador 2
   hudPlayerName1: {fileID: 5295875275601571675}
@@ -7974,6 +7990,10 @@ PrefabInstance:
     - target: {fileID: 2680888424711448020, guid: dda4781456994754085870db0da37f3d, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: -89.1494
+      objectReference: {fileID: 0}
+    - target: {fileID: 3009756856814031179, guid: dda4781456994754085870db0da37f3d, type: 3}
+      propertyPath: m_Name
+      value: Name Player 2
       objectReference: {fileID: 0}
     - target: {fileID: 5082486128206951688, guid: dda4781456994754085870db0da37f3d, type: 3}
       propertyPath: player

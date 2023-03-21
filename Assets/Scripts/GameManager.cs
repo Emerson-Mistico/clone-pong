@@ -13,11 +13,11 @@ public class GameManager : MonoBehaviour
 
     [Header ("Game Settings")]
     public BallBase ballBase;
-    public int defaultPointsToWin = 3;
     public TMP_InputField inputFieldPointsToWin;
 
+    public int defaultPointsToWin = 3;
     public string defaultPlayerName1 = "Jogador 1";
-    public string defaultPlayerName2 = "Jogador 2";
+    public string defaultPlayerName2 = "Jogador 2";  
 
     [Header ("HUD References")]
     public TextMeshProUGUI hudPlayerName1;
