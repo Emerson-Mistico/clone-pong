@@ -25,6 +25,7 @@ public class GameManager : MonoBehaviour
     public TextMeshProUGUI hudPointsPlayer1;
     public TextMeshProUGUI hudPointsPlayer2;
     public TextMeshProUGUI hudLastWinner;
+    public TextMeshProUGUI hudLastWinnerSettings;
 
     [Header("Menu Settings References")]
     public GameObject uiMainMenu;
@@ -50,6 +51,7 @@ public class GameManager : MonoBehaviour
         PlayerPrefs.SetString("lastWinner", _lastWinner);
 
         hudLastWinner.text = _lastWinner;
+        hudLastWinnerSettings.text = _lastWinner;
         hudPlayerName1.text = defaultPlayerName1.ToString();
         hudPlayerName2.text = defaultPlayerName2.ToString();
 
@@ -69,6 +71,7 @@ public class GameManager : MonoBehaviour
     {
         PlayerPrefs.SetString("lastWinner", winnerPlayer);
         hudLastWinner.text = winnerPlayer;
+        hudLastWinnerSettings.text = winnerPlayer;
         ballBase.ballCanMove(false);
         StateMachine.Instance.SwitchState(StateMachine.States.END_GAME);
     }
