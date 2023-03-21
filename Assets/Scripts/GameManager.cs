@@ -17,17 +17,23 @@ public class GameManager : MonoBehaviour
 
     public int defaultPointsToWin = 3;
     public string defaultPlayerName1 = "Jogador 1";
-    public string defaultPlayerName2 = "Jogador 2";  
+    public string defaultPlayerName2 = "Jogador 2";
 
     [Header ("HUD References")]
     public TextMeshProUGUI hudPlayerName1;
     public TextMeshProUGUI hudPlayerName2;
+    public TextMeshProUGUI hudPointsPlayer1;
+    public TextMeshProUGUI hudPointsPlayer2;
 
     [Header("Menu Settings References")]
     public GameObject uiMainMenu;
     public GameObject uiPauseMenu;
     public GameObject uiSettingsMenu;
     public GameObject uiEndGameMenu;
+
+    [Header("Players references")]
+    public Player refPlayer1;
+    public Player refPlayer2;
 
     private string _currentPointsToWin;
     private string _lastWinner = "Sem vencedor";
@@ -62,6 +68,16 @@ public class GameManager : MonoBehaviour
         PlayerPrefs.SetString("lastWinner", winnerPlayer);
         ballBase.ballCanMove(false);
         StateMachine.Instance.SwitchState(StateMachine.States.END_GAME);
+    }
+
+    public void PlayAgain()
+    {
+        ResetBallPosition(PlayerPrefs.GetString("lastWinner"));
+        refPlayer1.currentPoints = 0;
+        refPlayer2.currentPoints = 0;
+        hudPointsPlayer1.text = "0";
+        hudPointsPlayer2.text = "0";
+        StateMachine.Instance.SwitchState(StateMachine.States.PLAYING);
     }
 
     public void ResetGame()

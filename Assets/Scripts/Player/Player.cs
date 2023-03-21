@@ -55,5 +55,6 @@ public class Player : MonoBehaviour
     private void ResetPlayer()
     {
         currentPoints = 0;
+        hudPointsToShow.text = currentPoints.ToString();
     }
 }
