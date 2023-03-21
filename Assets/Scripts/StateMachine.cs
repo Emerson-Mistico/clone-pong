@@ -49,11 +49,16 @@ public class StateMachine : MonoBehaviour
         
         if (Input.GetKeyDown(KeyCode.Escape) 
             && (_currentState.ToString() != "StatePause") 
-            && (_currentState.ToString() != "StateMenu"))
+            && (_currentState.ToString() != "StateMenu")
+            && (_currentState.ToString() != "StateEndGame"))
         {
             // Pause game at anytime
             SwitchState(States.PAUSE);
         } 
+        else if (Input.GetKeyDown(KeyCode.Escape) && _currentState.ToString() == "StateEndGame")
+        {
+            return;
+        }
         else if (Input.GetKeyDown(KeyCode.Escape))
         {
             // Quit Pause or Menu and resume game

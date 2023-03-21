@@ -46,16 +46,18 @@ public class GameManager : MonoBehaviour
         // Instanciate GameManager (Singleton)
         Instance = this;
 
+        // set as default values to play
         inputFieldPointsToWin.text = defaultPointsToWin.ToString();
         PlayerPrefs.SetInt("pointsToWin", defaultPointsToWin);
         PlayerPrefs.SetString("lastWinner", _lastWinner);
 
+        // update HUD and Menu point values
         hudLastWinner.text = _lastWinner;
         hudLastWinnerSettings.text = _lastWinner;
         hudPlayerName1.text = defaultPlayerName1.ToString();
-        hudPlayerName2.text = defaultPlayerName2.ToString();
+        hudPlayerName2.text = defaultPlayerName2.ToString();   
 
-    }
+}
 
     public void DoChangePointsToWin()
     {

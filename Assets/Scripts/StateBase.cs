@@ -48,7 +48,7 @@ public class StatePlaying: StateBase
     public override void OnStateEnter(object obj = null)
     {
         base.OnStateEnter();
-        Debug.Log("State : Playng");
+        Debug.Log("State : Playing");
     }
 }
 

@@ -1,12 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class BallBase : MonoBehaviour
 {
     [Header("Ball Settings")]
     public Vector3 ballSpeed = new Vector3(0.15f, 0.15f);
-    public float timetoSetBallFree = 0.50f;  
+    public float timetoSetBallFree = 0.55f;
 
     [Header("Ball Random Settings")]
     public Vector2 randSpeedY = new Vector2(-0.25f, 0.7f);
@@ -20,7 +21,6 @@ public class BallBase : MonoBehaviour
     private Vector3 _startPosition;
     private Vector3 _startBallSpeed;
     private bool _ballCanMove = false;
-    
 
     private void Awake()
     {
@@ -31,6 +31,7 @@ public class BallBase : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
         if (_ballCanMove)
         {
             transform.Translate(ballSpeed);
@@ -64,7 +65,7 @@ public class BallBase : MonoBehaviour
     }
 
     private void SetBallFree()
-    {
+    {              
         ballCanMove(true);
     }
 
