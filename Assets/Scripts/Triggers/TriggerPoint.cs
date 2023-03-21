@@ -28,7 +28,7 @@ public class TriggerPoint : MonoBehaviour
             GameManager.Instance.EndGame(player.name.ToString());
         } else
         {
-            GameManager.Instance.ResetBallPosition(player.name.ToString());
+            GameManager.Instance.ResetBallPosition(player.name.ToString(), true);
         }        
     }
 

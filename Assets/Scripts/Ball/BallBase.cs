@@ -46,7 +46,7 @@ public class BallBase : MonoBehaviour
         _ballCanMove = state;
     }
 
-    public void ResetBall(string currentWay)
+    public void ResetBall(string currentWay, bool moveBall)
     {
         ballCanMove(false);
         ballSpeed = _startBallSpeed;
@@ -57,7 +57,10 @@ public class BallBase : MonoBehaviour
             ballSpeed.x *= -1;
         }
         transform.position = _startPosition;
-        Invoke(nameof(SetBallFree), timetoSetBallFree);
+        if (moveBall)
+        {
+            Invoke(nameof(SetBallFree), timetoSetBallFree);
+        }
     }
 
     private void SetBallFree()

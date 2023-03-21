@@ -47,7 +47,9 @@ public class StateMachine : MonoBehaviour
     private void Update()
     {
         
-        if (Input.GetKeyDown(KeyCode.Escape) && (_currentState.ToString() != "StatePause") && (_currentState.ToString() != "StateMenu"))
+        if (Input.GetKeyDown(KeyCode.Escape) 
+            && (_currentState.ToString() != "StatePause") 
+            && (_currentState.ToString() != "StateMenu"))
         {
             // Pause game at anytime
             SwitchState(States.PAUSE);

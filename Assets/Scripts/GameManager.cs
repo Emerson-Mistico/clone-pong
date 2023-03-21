@@ -60,6 +60,9 @@ public class GameManager : MonoBehaviour
     public void DoChangePointsToWin()
     {
         _currentPointsToWin = inputFieldPointsToWin.text;
+        PlayerPrefs.SetInt("pointsToWin", int.Parse(_currentPointsToWin));
+        PlayAgain(false);
+        StateMachine.Instance.SwitchState(StateMachine.States.PLAYING);
     }
 
     public void StartGame()
@@ -76,9 +79,9 @@ public class GameManager : MonoBehaviour
         StateMachine.Instance.SwitchState(StateMachine.States.END_GAME);
     }
 
-    public void PlayAgain()
+    public void PlayAgain(bool moveBall)
     {
-        ResetBallPosition(PlayerPrefs.GetString("lastWinner"));
+        ResetBallPosition(PlayerPrefs.GetString("lastWinner"), moveBall);
         refPlayer1.currentPoints = 0;
         refPlayer2.currentPoints = 0;
         hudPointsPlayer1.text = "0";
@@ -115,6 +118,7 @@ public class GameManager : MonoBehaviour
     }
     public void ShowEndGameMenu()
     {
+        ballBase.ballCanMove(false);
         uiEndGameMenu.SetActive(true);
     }
 
@@ -126,9 +130,9 @@ public class GameManager : MonoBehaviour
         StateMachine.Instance.SwitchState(StateMachine.States.PLAYING);
     }
 
-    public void ResetBallPosition(string currentWay)
+    public void ResetBallPosition(string currentWay, bool moveBall)
     {
-        ballBase.ResetBall(currentWay);
+        ballBase.ResetBall(currentWay, moveBall);
     }
 
 }
