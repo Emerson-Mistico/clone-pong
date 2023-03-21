@@ -24,6 +24,7 @@ public class GameManager : MonoBehaviour
     public TextMeshProUGUI hudPlayerName2;
     public TextMeshProUGUI hudPointsPlayer1;
     public TextMeshProUGUI hudPointsPlayer2;
+    public TextMeshProUGUI hudLastWinner;
 
     [Header("Menu Settings References")]
     public GameObject uiMainMenu;
@@ -36,7 +37,7 @@ public class GameManager : MonoBehaviour
     public Player refPlayer2;
 
     private string _currentPointsToWin;
-    private string _lastWinner = "Sem vencedor";
+    private string _lastWinner = "Sem vencedor no momento";
 
     // Start is called before the first frame update
     private void Awake()
@@ -48,6 +49,7 @@ public class GameManager : MonoBehaviour
         PlayerPrefs.SetInt("pointsToWin", defaultPointsToWin);
         PlayerPrefs.SetString("lastWinner", _lastWinner);
 
+        hudLastWinner.text = _lastWinner;
         hudPlayerName1.text = defaultPlayerName1.ToString();
         hudPlayerName2.text = defaultPlayerName2.ToString();
 
@@ -66,6 +68,7 @@ public class GameManager : MonoBehaviour
     public void EndGame(string winnerPlayer)
     {
         PlayerPrefs.SetString("lastWinner", winnerPlayer);
+        hudLastWinner.text = winnerPlayer;
         ballBase.ballCanMove(false);
         StateMachine.Instance.SwitchState(StateMachine.States.END_GAME);
     }

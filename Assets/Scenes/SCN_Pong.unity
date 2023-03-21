@@ -5078,6 +5078,7 @@ MonoBehaviour:
   hudPlayerName2: {fileID: 1926936761}
   hudPointsPlayer1: {fileID: 1074364767}
   hudPointsPlayer2: {fileID: 1704251463}
+  hudLastWinner: {fileID: 1297902653}
   uiMainMenu: {fileID: 808994744}
   uiPauseMenu: {fileID: 770644755}
   uiSettingsMenu: {fileID: 431568167}
