@@ -104,8 +104,10 @@ public class GameManager : MonoBehaviour
 
     public void ShowMainMenu()
     {
+
         ballBase.ballCanMove(false);
         uiMainMenu.SetActive(true);
+        
     }
 
     public void ShowPauseMenu()

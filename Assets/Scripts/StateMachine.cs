@@ -22,9 +22,8 @@ public class StateMachine : MonoBehaviour
     public Dictionary<States, StateBase> dictionaryState;
         
     private StateBase _currentState;
-    // public Player player;
-    // public float timeToStartGame = 2f;
-
+    public string currentStateToShow;
+    
     private void Awake()
     {
         // Instanciate StateMachine (Singleton)
@@ -68,6 +67,7 @@ public class StateMachine : MonoBehaviour
         {
             SwitchState(States.MENU);
         }
+
     }
 
     public void SwitchState(States state)
@@ -83,6 +83,10 @@ public class StateMachine : MonoBehaviour
         { 
             _currentState.OnStateEnter(); 
         }
+
+        // To check the state in other places
+        currentStateToShow = _currentState.ToString();
+
     }
   
 }
