@@ -37,6 +37,10 @@ public class GameManager : MonoBehaviour
     public Player refPlayer1;
     public Player refPlayer2;
 
+    [Header("Screen references")]
+    public GameObject uiWelcomeScreen;
+    public GameObject uiQuitScreen;
+
     private string _currentPointsToWin;
     private string _lastWinner = "Sem vencedor no momento";
 
@@ -66,7 +70,6 @@ public class GameManager : MonoBehaviour
         PlayAgain(false);
         StateMachine.Instance.SwitchState(StateMachine.States.PLAYING);
     }
-
     public void StartGame()
     {
         ballBase.ballCanMove(true);
@@ -90,6 +93,13 @@ public class GameManager : MonoBehaviour
         hudPointsPlayer2.text = "0";
         StateMachine.Instance.SwitchState(StateMachine.States.PLAYING);
     }
+    public void ResumeGame()
+    {
+        uiPauseMenu.SetActive(false);
+        uiMainMenu.SetActive(false);
+        ballBase.ballCanMove(true);
+        StateMachine.Instance.SwitchState(StateMachine.States.PLAYING);
+    }
 
     public void ResetGame()
     {
@@ -102,10 +112,16 @@ public class GameManager : MonoBehaviour
         StateMachine.Instance.SwitchState(StateMachine.States.QUIT_GAME);
     }
 
+    public void ShowWelcomeScreen()
+    {
+        uiWelcomeScreen.SetActive(true);
+    }
+
     public void ShowMainMenu()
     {
 
         ballBase.ballCanMove(false);
+        uiWelcomeScreen.SetActive(false);
         uiMainMenu.SetActive(true);
         
     }
@@ -124,14 +140,6 @@ public class GameManager : MonoBehaviour
     {
         ballBase.ballCanMove(false);
         uiEndGameMenu.SetActive(true);
-    }
-
-    public void ResumeGame()
-    {
-        uiPauseMenu.SetActive(false);
-        uiMainMenu.SetActive(false);
-        ballBase.ballCanMove(true);
-        StateMachine.Instance.SwitchState(StateMachine.States.PLAYING);
     }
 
     public void ResetBallPosition(string currentWay, bool moveBall)

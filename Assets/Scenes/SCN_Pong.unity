@@ -5925,6 +5925,8 @@ MonoBehaviour:
   uiEndGameMenu: {fileID: 588335811}
   refPlayer1: {fileID: 1862624726}
   refPlayer2: {fileID: 1533991289}
+  uiWelcomeScreen: {fileID: 873362776}
+  uiQuitScreen: {fileID: 721931944}
 --- !u!4 &1382662901
 Transform:
   m_ObjectHideFlags: 0
