@@ -42,6 +42,7 @@ public class BallBase : MonoBehaviour
         }
     }
 
+    #region Ball Movment Manipulation
     public void ballCanMove(bool state)
     {
         _ballCanMove = state;
@@ -68,7 +69,9 @@ public class BallBase : MonoBehaviour
     {              
         ballCanMove(true);
     }
+    #endregion
 
+    #region Collision Manipulation
     // Checks if the collision is with a player to reverse the direction
     private void OnCollisionEnter2D(Collision2D collision)
     {
@@ -95,5 +98,6 @@ public class BallBase : MonoBehaviour
             ballSpeed.x = rand;
         }
     }
-       
+    #endregion
+
 }

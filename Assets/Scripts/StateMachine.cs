@@ -26,8 +26,18 @@ public class StateMachine : MonoBehaviour
     
     private void Awake()
     {
-        // Instanciate StateMachine (Singleton)
-        Instance = this;
+        #region Singleton StateMachine
+        // Enforce unique instance of this class
+        if (Instance == null)
+        {
+            Instance = this;
+            DontDestroyOnLoad(gameObject);
+        }
+        else
+        {
+            Destroy(gameObject);
+        }       
+        #endregion
 
         dictionaryState = new Dictionary<States, StateBase>();
         dictionaryState.Clear();

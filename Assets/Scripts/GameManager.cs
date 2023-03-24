@@ -43,8 +43,18 @@ public class GameManager : MonoBehaviour
     // Start is called before the first frame update
     private void Awake()
     {
-        // Instanciate GameManager (Singleton)
-        Instance = this;
+        #region Singleton Gamemanager
+        // Enforce unique instance of this class
+        if (Instance == null)
+        {
+            Instance = this;
+            DontDestroyOnLoad(gameObject);
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
+        #endregion
 
         // set as default values to play
         inputFieldPointsToWin.text = defaultPointsToWin.ToString();
@@ -59,6 +69,7 @@ public class GameManager : MonoBehaviour
 
 }
 
+    #region General Manipulation
     public void DoChangePointsToWin()
     {
         _currentPointsToWin = inputFieldPointsToWin.text;
@@ -66,6 +77,14 @@ public class GameManager : MonoBehaviour
         PlayAgain(false);
         StateMachine.Instance.SwitchState(StateMachine.States.PLAYING);
     }
+
+    public void ResetBallPosition(string currentWay, bool moveBall)
+    {
+        ballBase.ResetBall(currentWay, moveBall);
+    }
+    #endregion
+
+    #region Game Manipulation
     public void StartGame()
     {
         ballBase.ballCanMove(true);
@@ -100,14 +119,16 @@ public class GameManager : MonoBehaviour
     public void ResetGame()
     {
         PlayerPrefs.DeleteAll();
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene("SCN_Pong");
     }
 
     public void QuitGame()
     {
         StateMachine.Instance.SwitchState(StateMachine.States.QUIT_GAME);
     }
+    #endregion
 
+    #region Menu manipulations
     public void ShowMainMenu()
     {
 
@@ -131,10 +152,6 @@ public class GameManager : MonoBehaviour
         ballBase.ballCanMove(false);
         uiEndGameMenu.SetActive(true);
     }
-
-    public void ResetBallPosition(string currentWay, bool moveBall)
-    {
-        ballBase.ResetBall(currentWay, moveBall);
-    }
+    #endregion
 
 }
