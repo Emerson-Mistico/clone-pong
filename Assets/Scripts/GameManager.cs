@@ -37,10 +37,6 @@ public class GameManager : MonoBehaviour
     public Player refPlayer1;
     public Player refPlayer2;
 
-    [Header("Screen references")]
-    public GameObject uiWelcomeScreen;
-    public GameObject uiQuitScreen;
-
     private string _currentPointsToWin;
     private string _lastWinner = "Sem vencedor no momento";
 
@@ -104,7 +100,7 @@ public class GameManager : MonoBehaviour
     public void ResetGame()
     {
         PlayerPrefs.DeleteAll();
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene(1);
     }
 
     public void QuitGame()
@@ -112,16 +108,10 @@ public class GameManager : MonoBehaviour
         StateMachine.Instance.SwitchState(StateMachine.States.QUIT_GAME);
     }
 
-    public void ShowWelcomeScreen()
-    {
-        uiWelcomeScreen.SetActive(true);
-    }
-
     public void ShowMainMenu()
     {
 
         ballBase.ballCanMove(false);
-        uiWelcomeScreen.SetActive(false);
         uiMainMenu.SetActive(true);
         
     }

@@ -10,7 +10,6 @@ public class StateMachine : MonoBehaviour
     public enum States
     {
         START_GAME,
-        WELCOME_SCREEN,
         MENU,
         PLAYING,
         PAUSE,
@@ -33,7 +32,6 @@ public class StateMachine : MonoBehaviour
         dictionaryState = new Dictionary<States, StateBase>();
         dictionaryState.Clear();
         dictionaryState.Add(States.START_GAME, new StateStartGame());
-        dictionaryState.Add(States.WELCOME_SCREEN, new StateWelcomeScreen());
         dictionaryState.Add(States.MENU, new StateMenu());
         dictionaryState.Add(States.PLAYING, new StatePlaying());
         dictionaryState.Add(States.PAUSE, new StatePause());
@@ -67,11 +65,6 @@ public class StateMachine : MonoBehaviour
             SwitchState(States.RESUME_GAME);
         } 
         else if (_currentState.ToString() == "StateStartGame")
-        {
-            SwitchState(States.WELCOME_SCREEN);
-        } 
-        else if (_currentState.ToString() == "StateWelcomeScreen" 
-                   && Input.anyKeyDown)
         {
             SwitchState(States.MENU);
         }

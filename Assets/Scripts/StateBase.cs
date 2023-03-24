@@ -33,16 +33,6 @@ public class StateStartGame: StateBase
     }
 }
 
-public class StateWelcomeScreen : StateBase
-{
-    public override void OnStateEnter(object obj = null)
-    {
-        base.OnStateEnter();
-        GameManager.Instance.ShowWelcomeScreen();
-        //Debug.Log("State : WelcomeScreen");
-    }
-}
-
 public class StateMenu : StateBase
 {
     public override void OnStateEnter(object obj = null)
