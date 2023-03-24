@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class StateBase
 {
@@ -85,7 +86,7 @@ public class StateQuitGame : StateBase
 {
     public override void OnStateEnter(object obj = null)
     {
-        Application.Quit();
+        SceneManager.LoadScene("SCN_QuitGame");
         //Debug.Log("State : QuitGame");
     }
 }

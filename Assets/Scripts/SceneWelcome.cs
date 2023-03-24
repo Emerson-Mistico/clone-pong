@@ -10,7 +10,7 @@ public class SceneWelcome : MonoBehaviour
     {
         if (Input.anyKeyDown)
         {
-            SceneManager.LoadScene(1);
+            SceneManager.LoadScene("SCN_Pong");
         }
     }
 }
