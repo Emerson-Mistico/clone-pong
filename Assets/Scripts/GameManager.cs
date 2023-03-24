@@ -22,6 +22,8 @@ public class GameManager : MonoBehaviour
     [Header ("HUD References")]
     public TextMeshProUGUI hudPlayerName1;
     public TextMeshProUGUI hudPlayerName2;
+    public TextMeshProUGUI settingsPlayerName1;
+    public TextMeshProUGUI settingsPlayerName2;
     public TextMeshProUGUI hudPointsPlayer1;
     public TextMeshProUGUI hudPointsPlayer2;
     public TextMeshProUGUI hudLastWinner;
@@ -52,13 +54,18 @@ public class GameManager : MonoBehaviour
         PlayerPrefs.SetInt("pointsToWin", defaultPointsToWin);
         PlayerPrefs.SetString("lastWinner", _lastWinner);
 
-        // update HUD and Menu point values
+        // update HUD and Menu point values and names
         hudLastWinner.text = _lastWinner;
         hudLastWinnerSettings.text = _lastWinner;
-        hudPlayerName1.text = defaultPlayerName1.ToString();
-        hudPlayerName2.text = defaultPlayerName2.ToString();   
 
-}
+        hudPlayerName1.text = defaultPlayerName1.ToString();
+        hudPlayerName2.text = defaultPlayerName2.ToString();
+        settingsPlayerName1.text = defaultPlayerName1.ToString();
+        settingsPlayerName2.text = defaultPlayerName2.ToString();
+        refPlayer1.name = defaultPlayerName1.ToString();
+        refPlayer2.name = defaultPlayerName2.ToString();
+
+    }
 
     #region General Manipulation
     public void DoChangePointsToWin()
