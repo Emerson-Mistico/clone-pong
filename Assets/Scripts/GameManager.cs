@@ -44,16 +44,7 @@ public class GameManager : MonoBehaviour
     private void Awake()
     {
         #region Singleton Gamemanager
-        // Enforce unique instance of this class
-        if (Instance == null)
-        {
-            Instance = this;
-            DontDestroyOnLoad(gameObject);
-        }
-        else
-        {
-            Destroy(gameObject);
-        }
+        Instance = this;
         #endregion
 
         // set as default values to play

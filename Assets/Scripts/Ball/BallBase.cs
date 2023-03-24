@@ -18,6 +18,9 @@ public class BallBase : MonoBehaviour
     public string keyToCheck = "Player";
     public string wayToCheck = "Player 1";
 
+    [Header("Sound Effects")]
+    [SerializeField] private AudioClip _clip;
+
     private Vector3 _startPosition;
     private Vector3 _startBallSpeed;
     private bool _ballCanMove = false;
@@ -42,7 +45,7 @@ public class BallBase : MonoBehaviour
         }
     }
 
-    #region Ball Movment Manipulation
+    #region Ball Movement Manipulation
     public void ballCanMove(bool state)
     {
         _ballCanMove = state;
@@ -82,6 +85,7 @@ public class BallBase : MonoBehaviour
         {
             ballSpeed.y *= -1;
         }
+        SoundManager.Instance.PlaySound(_clip);
     }
 
     // Randomly changes the speed of the ball (within an established range)
