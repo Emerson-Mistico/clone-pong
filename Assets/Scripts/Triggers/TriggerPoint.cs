@@ -9,6 +9,9 @@ public class TriggerPoint : MonoBehaviour
     public Player player;
     public string tagToCheck = "Ball";
 
+    [Header("Sound Effects")]
+    [SerializeField] private AudioClip _clip;
+
     private int _currentPlayerPoints;
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -16,6 +19,7 @@ public class TriggerPoint : MonoBehaviour
         if (collision.transform.tag == tagToCheck)
         {
             CountPoint();
+            SoundManager.Instance.PlaySound(_clip);
         }
     }
 

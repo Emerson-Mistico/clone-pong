@@ -1934,6 +1934,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 1989739948}
     m_Modifications:
     - target: {fileID: -8761923096993360204, guid: 92065b3b962588842b03f4792aa3223c, type: 3}
+      propertyPath: _clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 8acd1d855992c3249a8db4450dc49fa1, type: 3}
+    - target: {fileID: -8761923096993360204, guid: 92065b3b962588842b03f4792aa3223c, type: 3}
       propertyPath: player
       value: 
       objectReference: {fileID: 1862624726}
@@ -3628,7 +3632,8 @@ MonoBehaviour:
   playerToCheck: {fileID: 1862624726}
   keyToCheck: Player
   wayToCheck: Player 1
-  _clip: {fileID: 8300000, guid: c1224c075a1c09e4896e52df678ed75f, type: 3}
+  _clipWall: {fileID: 8300000, guid: c1224c075a1c09e4896e52df678ed75f, type: 3}
+  _clipPlayer: {fileID: 8300000, guid: c1224c075a1c09e4896e52df678ed75f, type: 3}
 --- !u!50 &897504839
 Rigidbody2D:
   serializedVersion: 4
@@ -5992,6 +5997,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1989739948}
     m_Modifications:
+    - target: {fileID: -8761923096993360204, guid: 92065b3b962588842b03f4792aa3223c, type: 3}
+      propertyPath: _clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 8acd1d855992c3249a8db4450dc49fa1, type: 3}
     - target: {fileID: -8761923096993360204, guid: 92065b3b962588842b03f4792aa3223c, type: 3}
       propertyPath: player
       value: 

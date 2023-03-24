@@ -19,7 +19,7 @@ public class BallBase : MonoBehaviour
     public string wayToCheck = "Player 1";
 
     [Header("Sound Effects")]
-    [SerializeField] private AudioClip _clip;
+    [SerializeField] private AudioClip _clipWall, _clipPlayer;
 
     private Vector3 _startPosition;
     private Vector3 _startBallSpeed;
@@ -80,12 +80,14 @@ public class BallBase : MonoBehaviour
     {
         if (collision.gameObject.tag == keyToCheck)
         {
+            SoundManager.Instance.PlaySound(_clipPlayer);
             OnPlayerCollision();
         } else
         {
+            SoundManager.Instance.PlaySound(_clipWall);
             ballSpeed.y *= -1;
         }
-        SoundManager.Instance.PlaySound(_clip);
+        
     }
 
     // Randomly changes the speed of the ball (within an established range)
