@@ -26,6 +26,8 @@ public class GameManager : MonoBehaviour
     public TextMeshProUGUI settingsPlayerName2;
     public TextMeshProUGUI hudPointsPlayer1;
     public TextMeshProUGUI hudPointsPlayer2;
+    public TextMeshProUGUI scorePointsPlayer1;
+    public TextMeshProUGUI scorePointsPlayer2;
     public TextMeshProUGUI hudLastWinner;
     public TextMeshProUGUI hudLastWinnerSettings;
 
@@ -104,6 +106,8 @@ public class GameManager : MonoBehaviour
         refPlayer2.currentPoints = 0;
         hudPointsPlayer1.text = "0";
         hudPointsPlayer2.text = "0";
+        scorePointsPlayer1.text = "0";
+        scorePointsPlayer2.text = "0";
         StateMachine.Instance.SwitchState(StateMachine.States.PLAYING);
     }
     public void ResumeGame()

@@ -20,6 +20,7 @@ public class Player : MonoBehaviour
     [Header("Points")]
     public int currentPoints;
     public TextMeshProUGUI hudPointsToShow;
+    public TextMeshProUGUI scorePointsToShow;
 
     private void Awake()
     {
@@ -43,6 +44,7 @@ public class Player : MonoBehaviour
     {
         currentPoints++;
         hudPointsToShow.text = currentPoints.ToString();
+        scorePointsToShow.text = currentPoints.ToString();
 
         return currentPoints;
     }
