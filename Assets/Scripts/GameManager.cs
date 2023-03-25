@@ -125,6 +125,11 @@ public class GameManager : MonoBehaviour
         SceneManager.LoadScene("SCN_Pong");
     }
 
+    public void ShowCreditsScene()
+    {
+        SceneManager.LoadScene("SCN_Credits");
+    }
+
     public void QuitGame()
     {
         StateMachine.Instance.SwitchState(StateMachine.States.QUIT_GAME);

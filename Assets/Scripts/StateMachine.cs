@@ -89,7 +89,7 @@ public class StateMachine : MonoBehaviour
         // To check the state in other places
         currentStateToShow = _currentState.ToString();
 
-    Debug.Log ("State: " + currentStateToShow);
+    // Debug.Log ("State: " + currentStateToShow);
 
     }
   
