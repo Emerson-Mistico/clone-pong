@@ -4172,10 +4172,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9d36f72d3dd59940a5f76583dce64a0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ballSpeed: {x: 0.3, y: 0.3, z: 0}
-  timetoSetBallFree: 0.55
-  randSpeedY: {x: -0.5, y: 1}
-  randSpeedX: {x: 0.15, y: 1.3}
+  ballSpeed: {x: 30, y: 25, z: 0}
+  timetoSetBallFree: 1
+  randSpeedY: {x: 30, y: 80}
+  randSpeedX: {x: 15, y: 25}
   playerToCheck: {fileID: 1862624726}
   keyToCheck: Player
   wayToCheck: Player 1

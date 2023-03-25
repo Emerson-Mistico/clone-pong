@@ -37,7 +37,7 @@ public class BallBase : MonoBehaviour
 
         if (_ballCanMove)
         {
-            transform.Translate(ballSpeed);
+            transform.Translate(ballSpeed*Time.deltaTime);
             wayToCheck = playerToCheck.name;
         } else
         {
