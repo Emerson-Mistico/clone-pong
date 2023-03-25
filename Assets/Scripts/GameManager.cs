@@ -110,6 +110,7 @@ public class GameManager : MonoBehaviour
     {
         uiPauseMenu.SetActive(false);
         uiMainMenu.SetActive(false);
+        uiEndGameMenu.SetActive(false);
         ballBase.ballCanMove(true);
         StateMachine.Instance.SwitchState(StateMachine.States.PLAYING);
     }
@@ -143,6 +144,7 @@ public class GameManager : MonoBehaviour
 
     public void ShowSettingsMenu()
     {
+        ballBase.ballCanMove(false);
         uiSettingsMenu.SetActive(true);
     }
     public void ShowEndGameMenu()
