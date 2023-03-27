@@ -187,7 +187,7 @@ MonoBehaviour:
     no intuito de teste e aprimoramento dos conceitos de Unity, C# e trabalho com
     GitHub (onde o reposit\xF3rio do jogo est\xE1 dispon\xEDvel).\r\n\n\n\nImagens
     de fundo: desenvolvido com MidJourney\r\nEfeitos Sonoros: Mulula (Unity Free
-    Asset Store)"
+    Asset Store)\nM\xFAsica de Fundo: Eons After (Unity Free Asset Store)"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}

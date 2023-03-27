@@ -10,6 +10,8 @@ public class ChangeName : MonoBehaviour
     [Header("References")]
     public TextMeshProUGUI uiTextName;
     public TextMeshProUGUI uiHudTextName;
+    public TextMeshProUGUI instructionsPlayerName;
+
     public TMP_InputField uiInputFieldName;
     public Player player;
 
@@ -26,6 +28,7 @@ public class ChangeName : MonoBehaviour
         uiTextName.text = playerName;
         uiHudTextName.text = playerName;
         player.name = playerName;
+        instructionsPlayerName.text = playerName;
     }
 
     

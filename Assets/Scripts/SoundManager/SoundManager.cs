@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class SoundManager : MonoBehaviour
 {
@@ -9,12 +10,15 @@ public class SoundManager : MonoBehaviour
     public static SoundManager Instance;
 
     [SerializeField] private AudioSource _musicSource, _effectsSource;
+    public Slider _volumeSlider;
 
     private void Awake()
     {
         #region Singleton SoundManager
         Instance = this;
         #endregion
+
+        ChangeMasterVolume(_volumeSlider.value);
     }
 
     public void PlaySound(AudioClip clip)

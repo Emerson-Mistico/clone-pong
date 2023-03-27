@@ -14,20 +14,28 @@ public class GameManager : MonoBehaviour
     [Header ("Game Settings")]
     public BallBase ballBase;
     public TMP_InputField inputFieldPointsToWin;
+    public TextMeshProUGUI instructiuonsPointsToWin;
 
     public int defaultPointsToWin = 3;
     public string defaultPlayerName1 = "Jogador 1";
     public string defaultPlayerName2 = "Jogador 2";
 
-    [Header ("HUD References")]
+    [Header ("HudScreen References")]
     public TextMeshProUGUI hudPlayerName1;
     public TextMeshProUGUI hudPlayerName2;
     public TextMeshProUGUI settingsPlayerName1;
     public TextMeshProUGUI settingsPlayerName2;
+    public TextMeshProUGUI instructionsPlayerName1;
+    public TextMeshProUGUI instructionsPlayerName2;
+    public TextMeshProUGUI instructionsKeyPlayer1;
+    public TextMeshProUGUI instructionsKeyPlayer2;
+
     public TextMeshProUGUI hudPointsPlayer1;
     public TextMeshProUGUI hudPointsPlayer2;
     public TextMeshProUGUI scorePointsPlayer1;
     public TextMeshProUGUI scorePointsPlayer2;
+
+    [Header("Winner References")]
     public TextMeshProUGUI hudLastWinner;
     public TextMeshProUGUI hudLastWinnerSettings;
 
@@ -36,6 +44,7 @@ public class GameManager : MonoBehaviour
     public GameObject uiPauseMenu;
     public GameObject uiSettingsMenu;
     public GameObject uiEndGameMenu;
+    public GameObject uiInstructionsScreen;
 
     [Header("Players references")]
     public Player refPlayer1;
@@ -53,6 +62,8 @@ public class GameManager : MonoBehaviour
 
         // set as default values to play
         inputFieldPointsToWin.text = defaultPointsToWin.ToString();
+        instructiuonsPointsToWin.text = instructiuonsPointsToWin.text.Replace("<POINTS>", defaultPointsToWin.ToString());
+
         PlayerPrefs.SetInt("pointsToWin", defaultPointsToWin);
         PlayerPrefs.SetString("lastWinner", _lastWinner);
 
@@ -62,10 +73,21 @@ public class GameManager : MonoBehaviour
 
         hudPlayerName1.text = defaultPlayerName1.ToString();
         hudPlayerName2.text = defaultPlayerName2.ToString();
+
         settingsPlayerName1.text = defaultPlayerName1.ToString();
         settingsPlayerName2.text = defaultPlayerName2.ToString();
+
         refPlayer1.name = defaultPlayerName1.ToString();
         refPlayer2.name = defaultPlayerName2.ToString();
+
+        instructionsPlayerName1.text= defaultPlayerName1.ToString();
+        instructionsPlayerName2.text= defaultPlayerName2.ToString();
+
+        instructionsKeyPlayer1.text = instructionsKeyPlayer1.text.Replace("<KEYUP>", refPlayer1.keyCodeMoveUp.ToString());
+        instructionsKeyPlayer1.text = instructionsKeyPlayer1.text.Replace("<KEYDOWN>", refPlayer1.keycodeMoveDown.ToString());
+        
+        instructionsKeyPlayer2.text = instructionsKeyPlayer2.text.Replace("<KEYUP>", refPlayer2.keyCodeMoveUp.ToString());
+        instructionsKeyPlayer2.text = instructionsKeyPlayer2.text.Replace("<KEYDOWN>", refPlayer2.keycodeMoveDown.ToString());
 
     }
 
@@ -74,6 +96,7 @@ public class GameManager : MonoBehaviour
     {
         _currentPointsToWin = inputFieldPointsToWin.text;
         PlayerPrefs.SetInt("pointsToWin", int.Parse(_currentPointsToWin));
+        instructiuonsPointsToWin.text = "O jogador que marcar <color=yellow>" + _currentPointsToWin + "</color> primeiro vence o jogo*.";
         PlayAgain(false);
         StateMachine.Instance.SwitchState(StateMachine.States.PLAYING);
     }
@@ -115,6 +138,7 @@ public class GameManager : MonoBehaviour
         uiPauseMenu.SetActive(false);
         uiMainMenu.SetActive(false);
         uiEndGameMenu.SetActive(false);
+        uiInstructionsScreen.SetActive(false);
         ballBase.ballCanMove(true);
         StateMachine.Instance.SwitchState(StateMachine.States.PLAYING);
     }
@@ -143,6 +167,14 @@ public class GameManager : MonoBehaviour
         ballBase.ballCanMove(false);
         uiMainMenu.SetActive(true);
         
+    }
+
+    public void ShowInstructionsScreen()
+    {
+
+        ballBase.ballCanMove(false);
+        uiInstructionsScreen.SetActive(true);
+
     }
 
     public void ShowPauseMenu()
