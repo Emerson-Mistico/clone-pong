@@ -28,7 +28,7 @@ public class StateStartGame: StateBase
     public override void OnStateEnter(object obj = null)
     {
         // receives the object (in this case the ball)
-        base.OnStateEnter(obj);
+        // base.OnStateEnter(obj);
         BallBase ball = (BallBase)obj;        
         //Debug.Log("State : StartGame");
     }
@@ -38,7 +38,7 @@ public class StateMenu : StateBase
 {
     public override void OnStateEnter(object obj = null)
     {
-        base.OnStateEnter();
+        //base.OnStateEnter();
         GameManager.Instance.ShowMainMenu();
         //Debug.Log("State : Menu");
     }

@@ -66,7 +66,6 @@ public class StateMachine : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Escape))
         {
-            Debug.Log("Pressed ESCAPE [ " + _currentState.ToString() + " ]");
 
             switch (_currentState.ToString())
             {
