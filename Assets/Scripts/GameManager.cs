@@ -97,14 +97,32 @@ public class GameManager : MonoBehaviour
         _currentPointsToWin = inputFieldPointsToWin.text;
         PlayerPrefs.SetInt("pointsToWin", int.Parse(_currentPointsToWin));
         instructiuonsPointsToWin.text = "O jogador que marcar <color=yellow>" + _currentPointsToWin + "</color> primeiro vence o jogo*.";
-        PlayAgain(false);
-        StateMachine.Instance.SwitchState(StateMachine.States.PLAYING);
+        
+        ResetBallPosition(PlayerPrefs.GetString("lastWinner"), false);
+        refPlayer1.currentPoints = 0;
+        refPlayer2.currentPoints = 0;
+        hudPointsPlayer1.text = "0";
+        hudPointsPlayer2.text = "0";
+        scorePointsPlayer1.text = "0";
+        scorePointsPlayer2.text = "0";
+
     }
 
     public void ResetBallPosition(string currentWay, bool moveBall)
     {
         ballBase.ResetBall(currentWay, moveBall);
     }
+
+    public void DisableAllScreens()
+    {
+        uiPauseMenu.SetActive(false);
+        uiMainMenu.SetActive(false);
+        uiEndGameMenu.SetActive(false);
+        uiSettingsMenu.SetActive(false);
+        uiInstructionsScreen.SetActive(false);
+    }
+
+
     #endregion
 
     #region Game Manipulation
@@ -135,11 +153,7 @@ public class GameManager : MonoBehaviour
     }
     public void ResumeGame()
     {
-        uiPauseMenu.SetActive(false);
-        uiMainMenu.SetActive(false);
-        uiEndGameMenu.SetActive(false);
-        uiInstructionsScreen.SetActive(false);
-        ballBase.ballCanMove(true);
+        DisableAllScreens();
         StateMachine.Instance.SwitchState(StateMachine.States.PLAYING);
     }
 
@@ -164,7 +178,7 @@ public class GameManager : MonoBehaviour
     public void ShowMainMenu()
     {
 
-        ballBase.ballCanMove(false);
+        // ballBase.ballCanMove(false);
         uiMainMenu.SetActive(true);
         
     }
@@ -172,25 +186,25 @@ public class GameManager : MonoBehaviour
     public void ShowInstructionsScreen()
     {
 
-        ballBase.ballCanMove(false);
+        // ballBase.ballCanMove(false);
         uiInstructionsScreen.SetActive(true);
 
     }
 
     public void ShowPauseMenu()
     {
-        ballBase.ballCanMove(false);
+        // ballBase.ballCanMove(false);
         uiPauseMenu.SetActive(true);
     }
 
     public void ShowSettingsMenu()
     {
-        ballBase.ballCanMove(false);
+        // ballBase.ballCanMove(false);
         uiSettingsMenu.SetActive(true);
     }
     public void ShowEndGameMenu()
     {
-        ballBase.ballCanMove(false);
+        // ballBase.ballCanMove(false);
         uiEndGameMenu.SetActive(true);
     }
     #endregion

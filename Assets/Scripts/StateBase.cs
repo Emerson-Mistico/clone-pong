@@ -48,8 +48,7 @@ public class StatePlaying: StateBase
 {
     public override void OnStateEnter(object obj = null)
     {
-        base.OnStateEnter();
-        //Debug.Log("State : Playing");
+        GameManager.Instance.ballBase.ballCanMove(true);
     }
 }
 
@@ -57,7 +56,7 @@ public class StatePause : StateBase
 {
     public override void OnStateEnter(object obj = null)
     {
-        base.OnStateEnter();
+        //base.OnStateEnter();
         GameManager.Instance.ShowPauseMenu();
         //Debug.Log("State : Pause");
     }
@@ -67,7 +66,7 @@ public class StateResume : StateBase
 {
     public override void OnStateEnter(object obj = null)
     {
-        base.OnStateEnter();
+        //base.OnStateEnter();
         GameManager.Instance.ResumeGame();
         //Debug.Log("State : Resume");
     }

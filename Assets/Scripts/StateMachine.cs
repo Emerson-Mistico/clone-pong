@@ -44,30 +44,42 @@ public class StateMachine : MonoBehaviour
 
     }
 
+    private void Start()
+    {
+
+        if (_currentState.ToString() == "StateStartGame")
+        {
+            SwitchState(States.MENU);
+        }
+    }
+
     private void Update()
     {
 
-        if (Input.GetKeyDown(KeyCode.Escape) 
-            && (_currentState.ToString() != "StatePause") 
-            && (_currentState.ToString() != "StateMenu")
-            && (_currentState.ToString() != "StateEndGame"))
+        if (_currentState.ToString() == "StatePlaying")
         {
-            // Pause game at anytime
-            SwitchState(States.PAUSE);
-        } 
-        else if (Input.GetKeyDown(KeyCode.Escape) 
-            && _currentState.ToString() == "StateEndGame")
+            GameManager.Instance.ballBase.ballCanMove(true);
+        } else
         {
-            return;
+            GameManager.Instance.ballBase.ballCanMove(false);
         }
-        else if (Input.GetKeyDown(KeyCode.Escape))
+
+        if (Input.GetKeyDown(KeyCode.Escape))
         {
-            // Quit Pause or Menu and resume game
-            SwitchState(States.RESUME_GAME);
-        } 
-        else if (_currentState.ToString() == "StateStartGame")
-        {
-            SwitchState(States.MENU);
+            Debug.Log("Pressed ESCAPE [ " + _currentState.ToString() + " ]");
+
+            switch (_currentState.ToString())
+            {
+                case 
+                    "StatePlaying":
+                        SwitchState(States.PAUSE);
+                    break;
+                case
+                    "StatePause":
+                        SwitchState(States.RESUME_GAME);
+                    break;
+            }
+
         }
 
     }
@@ -89,7 +101,7 @@ public class StateMachine : MonoBehaviour
         // To check the state in other places
         currentStateToShow = _currentState.ToString();
 
-    // Debug.Log ("State: " + currentStateToShow);
+        // Debug.Log ("State: " + currentStateToShow);
 
     }
   
