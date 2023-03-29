@@ -135,7 +135,7 @@ GameObject:
   - component: {fileID: 59246461}
   - component: {fileID: 59246460}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: TextCredts
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -186,8 +186,9 @@ MonoBehaviour:
     desenvolvida por Emerson Mistico, como atividade para o curso de Unity da E.B.A.C.
     no intuito de teste e aprimoramento dos conceitos de Unity, C# e trabalho com
     GitHub (onde o reposit\xF3rio do jogo est\xE1 dispon\xEDvel).\r\n\n\n\nImagens
-    de fundo: desenvolvido com MidJourney\r\nEfeitos Sonoros: Mulula (Unity Free
-    Asset Store)\nM\xFAsica de Fundo: Eons After (Unity Free Asset Store)"
+    de fundo: desenvolvido com MidJourney\r\nEfeitos Sonoros: Mulula (Unity Asset
+    Store - Free)\nM\xFAsica de Fundo: Eons After (Unity Asset Store - Free)\nFlag
+    Icons: Alejandro Cuffia (dribbble.com - Free)"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
