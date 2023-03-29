@@ -17,4 +17,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/SCN_QuitGame.unity
     guid: 0604c579396ae49478b61c55aaac4f7a
-  m_configObjects: {}
+  m_configObjects:
+    com.unity.addressableassets: {fileID: 11400000, guid: 9900a191e4834814a895ae865e1cc871, type: 2}
+    com.unity.localization.settings: {fileID: 11400000, guid: 83ffb9d39c42c1a43beec26d53b91a07, type: 2}
