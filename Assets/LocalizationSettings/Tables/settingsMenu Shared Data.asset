@@ -1,0 +1,96 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b11a58205ec3474ca216360e9fa74a8, type: 3}
+  m_Name: settingsMenu Shared Data
+  m_EditorClassIdentifier: 
+  m_TableCollectionName: settingsMenu
+  m_TableCollectionNameGuidString: 8616d92d8e3a5804dbd3e81262c40e61
+  m_Entries:
+  - m_Id: 365962043392
+    m_Key: textPlayerID
+    m_Metadata:
+      m_Items: []
+  - m_Id: 587303854080
+    m_Key: textPlayerName
+    m_Metadata:
+      m_Items: []
+  - m_Id: 669214416896
+    m_Key: textSelectColor
+    m_Metadata:
+      m_Items: []
+  - m_Id: 796020809728
+    m_Key: textPlayer
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1039550488576
+    m_Key: textFieldPlayerName
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1639566647296
+    m_Key: buttonChangeName
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1834698252288
+    m_Key: textScreenTitle
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2018807226368
+    m_Key: textLastWinner
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2471523622912
+    m_Key: textNoWinner
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2645008424960
+    m_Key: textTotalPoints
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2914375016448
+    m_Key: textWarning
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3108466434048
+    m_Key: textMusic
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3229375635456
+    m_Key: textVolume
+    m_Metadata:
+      m_Items: []
+  - m_Id: 115636312920064
+    m_Key: buttonAplyChange
+    m_Metadata:
+      m_Items: []
+  - m_Id: 116382152445952
+    m_Key: textEffects
+    m_Metadata:
+      m_Items: []
+  - m_Id: 116997742055424
+    m_Key: textSelectLanguage
+    m_Metadata:
+      m_Items: []
+  - m_Id: 117491248058368
+    m_Key: buttonReturn
+    m_Metadata:
+      m_Items: []
+  m_Metadata:
+    m_Items: []
+  m_KeyGenerator:
+    rid: 2097842489790300177
+  references:
+    version: 2
+    RefIds:
+    - rid: 2097842489790300177
+      type: {class: DistributedUIDGenerator, ns: UnityEngine.Localization.Tables, asm: Unity.Localization}
+      data:
+        m_CustomEpoch: 1680186998278

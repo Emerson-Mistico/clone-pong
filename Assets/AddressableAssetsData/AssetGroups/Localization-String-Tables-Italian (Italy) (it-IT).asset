@@ -23,6 +23,42 @@ MonoBehaviour:
     m_SerializedLabels:
     - Locale-it-IT
     - Preload
+  - m_GUID: 50c82311e77fb4c41b20a48dcedc604b
+    m_Address: mainMenu_it-IT
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-it-IT
+    - Preload
+  - m_GUID: b5635700ba7f12444ba81ae41aec582f
+    m_Address: pauseMenu_it-IT
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-it-IT
+    - Preload
+  - m_GUID: 337c37b9b4b9c5140abdde630c59acdb
+    m_Address: endGameMenu_it-IT
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-it-IT
+    - Preload
+  - m_GUID: 58a67ec0a70222a42a8bc7e1f3c46210
+    m_Address: settingsMenu_it-IT
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-it-IT
+    - Preload
+  - m_GUID: 8a2c8cc621a939c48a7fe7aea89e90aa
+    m_Address: instructionsScreen_it-IT
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-it-IT
+    - Preload
+  - m_GUID: 26727b6bddd8b6841890e9f3315a9b85
+    m_Address: creditsScreen_it-IT
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-it-IT
+    - Preload
   m_ReadOnly: 1
   m_Settings: {fileID: 11400000, guid: afedadd0a34324b45882fe362daea7ab, type: 2}
   m_SchemaSet:

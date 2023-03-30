@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: creditsScreen_pt-BR
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: pt-BR
+  m_SharedData: {fileID: 11400000, guid: 93466540172d76b49a5caca9d035059a, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 6125441024
+    m_Localized: "Clone Pong \xE9 um jogo inspirado no cl\xE1ssico de 1972, cria\xE7\xE3o
+      do Allan Alcorn para a Atari. Esta vers\xE3o com pequenas adapta\xE7\xF5es
+      foi desenvolvida por Emerson Mistico, como atividade para o curso de Unity
+      da E.B.A.C. no intuito de teste e aprimoramento dos conceitos de Unity, C#
+      e trabalho com GitHub (onde o reposit\xF3rio do jogo est\xE1 dispon\xEDvel).\r\n\r\n\r\n\r\nImagens
+      de fundo: desenvolvido com MidJourney\r\nEfeitos Sonoros: Mulula (Unity Asset
+      Store - Free)\r\nM\xFAsica de Fundo: Eons After (Unity Asset Store - Free)\r\nFlag
+      Icons: Alejandro Cuffia (dribbble.com - Free)"
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

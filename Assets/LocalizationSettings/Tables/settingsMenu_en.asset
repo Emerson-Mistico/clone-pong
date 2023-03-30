@@ -1,0 +1,92 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: settingsMenu_en
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: en
+  m_SharedData: {fileID: 11400000, guid: 8616d92d8e3a5804dbd3e81262c40e61, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 365962043392
+    m_Localized: 'Player Settings:'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 587303854080
+    m_Localized: Player
+    m_Metadata:
+      m_Items: []
+  - m_Id: 669214416896
+    m_Localized: 'Player Color:'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 796020809728
+    m_Localized: 'Player Name:'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1039550488576
+    m_Localized: Enter name here...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1639566647296
+    m_Localized: Change Name
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1834698252288
+    m_Localized: Settings
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2018807226368
+    m_Localized: 'Last Winner (Higscore):'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2471523622912
+    m_Localized: No winner recorded
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2645008424960
+    m_Localized: 'Points to  win:'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2914375016448
+    m_Localized: 'WARNING: Changing the number of points will restart the game and
+      reset the score.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3108466434048
+    m_Localized: Music
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3229375635456
+    m_Localized: Overall Volume
+    m_Metadata:
+      m_Items: []
+  - m_Id: 115636312920064
+    m_Localized: Change
+    m_Metadata:
+      m_Items: []
+  - m_Id: 116382152445952
+    m_Localized: Effects
+    m_Metadata:
+      m_Items: []
+  - m_Id: 116997742055424
+    m_Localized: Select Language
+    m_Metadata:
+      m_Items: []
+  - m_Id: 117491248058368
+    m_Localized: Back
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

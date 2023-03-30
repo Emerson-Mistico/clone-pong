@@ -1,0 +1,45 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: instructionsScreen_pt-BR
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: pt-BR
+  m_SharedData: {fileID: 11400000, guid: 00a35efc4b32db0438833956ca92725d, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 36697722880
+    m_Localized: "Para mover seu jogador para cima utilize: <KEYUP> e para mover
+      seu jogador para baixo utilize: <KEYDOWN>. Utilize essas teclas para rebater
+      a bola e marcar pontos no seu advers\xE1rio."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1934075023360
+    m_Localized: O jogador que marcar <POINTS> primeiro vence o jogo*
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2392277569536
+    m_Localized: "O total de pontos pode ser alterado no Menu de Configura\xE7\xF5es."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2774055702528
+    m_Localized: Menu Principal
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2901591904256
+    m_Localized: Fechar Jogo (Sair)
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

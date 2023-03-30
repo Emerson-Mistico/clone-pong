@@ -1,0 +1,48 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b11a58205ec3474ca216360e9fa74a8, type: 3}
+  m_Name: instructionsScreen Shared Data
+  m_EditorClassIdentifier: 
+  m_TableCollectionName: instructionsScreen
+  m_TableCollectionNameGuidString: 00a35efc4b32db0438833956ca92725d
+  m_Entries:
+  - m_Id: 36697722880
+    m_Key: textKeys
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1934075023360
+    m_Key: textPoints
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2392277569536
+    m_Key: textInformation
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2774055702528
+    m_Key: buttonMainMenu
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2901591904256
+    m_Key: buttonQuitExit
+    m_Metadata:
+      m_Items: []
+  m_Metadata:
+    m_Items: []
+  m_KeyGenerator:
+    rid: 2097842497759477766
+  references:
+    version: 2
+    RefIds:
+    - rid: 2097842497759477766
+      type: {class: DistributedUIDGenerator, ns: UnityEngine.Localization.Tables, asm: Unity.Localization}
+      data:
+        m_CustomEpoch: 1680215691661

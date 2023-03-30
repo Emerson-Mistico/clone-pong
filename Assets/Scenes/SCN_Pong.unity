@@ -552,6 +552,14 @@ PrefabInstance:
       propertyPath: m_fontStyle
       value: 17
       objectReference: {fileID: 0}
+    - target: {fileID: 9012228195467955189, guid: 73e5ed30c7660a6489b31b17c3e95ef2, type: 3}
+      propertyPath: m_StringReference.m_TableEntryReference.m_KeyId
+      value: 1219737788416
+      objectReference: {fileID: 0}
+    - target: {fileID: 9012228195467955189, guid: 73e5ed30c7660a6489b31b17c3e95ef2, type: 3}
+      propertyPath: m_StringReference.m_TableReference.m_TableCollectionName
+      value: GUID:d550f58b7ecb4924592696a5d149e241
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 73e5ed30c7660a6489b31b17c3e95ef2, type: 3}
 --- !u!224 &119164084 stripped
@@ -658,6 +666,18 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1382662900}
+    - target: {fileID: 6472069381069501364, guid: 5bbf63e2c14b53b4fac82561ec8ebd99, type: 3}
+      propertyPath: m_fontStyle
+      value: 17
+      objectReference: {fileID: 0}
+    - target: {fileID: 8820044238880859381, guid: 5bbf63e2c14b53b4fac82561ec8ebd99, type: 3}
+      propertyPath: m_StringReference.m_TableEntryReference.m_KeyId
+      value: 1857951473664
+      objectReference: {fileID: 0}
+    - target: {fileID: 8820044238880859381, guid: 5bbf63e2c14b53b4fac82561ec8ebd99, type: 3}
+      propertyPath: m_StringReference.m_TableReference.m_TableCollectionName
+      value: GUID:d550f58b7ecb4924592696a5d149e241
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5bbf63e2c14b53b4fac82561ec8ebd99, type: 3}
 --- !u!224 &120963396 stripped
@@ -1324,6 +1344,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: 'TitleContainer: Winner'
       objectReference: {fileID: 0}
+    - target: {fileID: 7930719772643772464, guid: 9e50d5332210c634193fba6763550342, type: 3}
+      propertyPath: m_StringReference.m_TableEntryReference.m_KeyId
+      value: 610330583040
+      objectReference: {fileID: 0}
+    - target: {fileID: 7930719772643772464, guid: 9e50d5332210c634193fba6763550342, type: 3}
+      propertyPath: m_StringReference.m_TableReference.m_TableCollectionName
+      value: GUID:97bc40b774d982945915c976a095661e
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9e50d5332210c634193fba6763550342, type: 3}
 --- !u!224 &255965832 stripped
@@ -1445,6 +1473,14 @@ PrefabInstance:
     - target: {fileID: 1751972378156403650, guid: ad6af7815f9026d4584c80e30a21b2bf, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 3429288863122241042, guid: ad6af7815f9026d4584c80e30a21b2bf, type: 3}
+      propertyPath: m_StringReference.m_TableEntryReference.m_KeyId
+      value: 116382152445952
+      objectReference: {fileID: 0}
+    - target: {fileID: 3429288863122241042, guid: ad6af7815f9026d4584c80e30a21b2bf, type: 3}
+      propertyPath: m_StringReference.m_TableReference.m_TableCollectionName
+      value: GUID:8616d92d8e3a5804dbd3e81262c40e61
       objectReference: {fileID: 0}
     - target: {fileID: 8016067585598415138, guid: ad6af7815f9026d4584c80e30a21b2bf, type: 3}
       propertyPath: m_Name
@@ -1694,6 +1730,7 @@ GameObject:
   - component: {fileID: 296694519}
   - component: {fileID: 296694521}
   - component: {fileID: 296694520}
+  - component: {fileID: 296694522}
   m_Layer: 5
   m_Name: TitleVolume
   m_TagString: Untagged
@@ -1818,6 +1855,46 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 296694518}
   m_CullTransparentMesh: 1
+--- !u!114 &296694522
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 296694518}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56eb0353ae6e5124bb35b17aff880f16, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_StringReference:
+    m_TableReference:
+      m_TableCollectionName: GUID:8616d92d8e3a5804dbd3e81262c40e61
+    m_TableEntryReference:
+      m_KeyId: 3229375635456
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  m_FormatArguments: []
+  m_UpdateString:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 296694520}
+        m_TargetAssemblyTypeName: TMPro.TMP_Text, Unity.TextMeshPro
+        m_MethodName: set_text
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  references:
+    version: 2
+    RefIds: []
 --- !u!1001 &338586481
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2019,6 +2096,14 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1382662900}
+    - target: {fileID: 8820044238880859381, guid: 5bbf63e2c14b53b4fac82561ec8ebd99, type: 3}
+      propertyPath: m_StringReference.m_TableEntryReference.m_KeyId
+      value: 2901591904256
+      objectReference: {fileID: 0}
+    - target: {fileID: 8820044238880859381, guid: 5bbf63e2c14b53b4fac82561ec8ebd99, type: 3}
+      propertyPath: m_StringReference.m_TableReference.m_TableCollectionName
+      value: GUID:00a35efc4b32db0438833956ca92725d
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5bbf63e2c14b53b4fac82561ec8ebd99, type: 3}
 --- !u!224 &344672243 stripped
@@ -3787,6 +3872,18 @@ PrefabInstance:
       propertyPath: m_text
       value: JOGAR NOVAMENTE
       objectReference: {fileID: 0}
+    - target: {fileID: 6820598854741499060, guid: 73e5ed30c7660a6489b31b17c3e95ef2, type: 3}
+      propertyPath: m_fontStyle
+      value: 17
+      objectReference: {fileID: 0}
+    - target: {fileID: 9012228195467955189, guid: 73e5ed30c7660a6489b31b17c3e95ef2, type: 3}
+      propertyPath: m_StringReference.m_TableEntryReference.m_KeyId
+      value: 177113505792
+      objectReference: {fileID: 0}
+    - target: {fileID: 9012228195467955189, guid: 73e5ed30c7660a6489b31b17c3e95ef2, type: 3}
+      propertyPath: m_StringReference.m_TableReference.m_TableCollectionName
+      value: GUID:d550f58b7ecb4924592696a5d149e241
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 73e5ed30c7660a6489b31b17c3e95ef2, type: 3}
 --- !u!224 &699778067 stripped
@@ -3920,6 +4017,18 @@ PrefabInstance:
     - target: {fileID: 6820598854741499060, guid: 73e5ed30c7660a6489b31b17c3e95ef2, type: 3}
       propertyPath: m_text
       value: "CONFIGURA\xC7\xD5ES"
+      objectReference: {fileID: 0}
+    - target: {fileID: 6820598854741499060, guid: 73e5ed30c7660a6489b31b17c3e95ef2, type: 3}
+      propertyPath: m_fontStyle
+      value: 17
+      objectReference: {fileID: 0}
+    - target: {fileID: 9012228195467955189, guid: 73e5ed30c7660a6489b31b17c3e95ef2, type: 3}
+      propertyPath: m_StringReference.m_TableEntryReference.m_KeyId
+      value: 1544364335104
+      objectReference: {fileID: 0}
+    - target: {fileID: 9012228195467955189, guid: 73e5ed30c7660a6489b31b17c3e95ef2, type: 3}
+      propertyPath: m_StringReference.m_TableReference.m_TableCollectionName
+      value: GUID:d550f58b7ecb4924592696a5d149e241
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 73e5ed30c7660a6489b31b17c3e95ef2, type: 3}
@@ -4093,6 +4202,14 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1382662900}
+    - target: {fileID: 8820044238880859381, guid: 5bbf63e2c14b53b4fac82561ec8ebd99, type: 3}
+      propertyPath: m_StringReference.m_TableEntryReference.m_KeyId
+      value: 422727753728
+      objectReference: {fileID: 0}
+    - target: {fileID: 8820044238880859381, guid: 5bbf63e2c14b53b4fac82561ec8ebd99, type: 3}
+      propertyPath: m_StringReference.m_TableReference.m_TableCollectionName
+      value: GUID:97bc40b774d982945915c976a095661e
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5bbf63e2c14b53b4fac82561ec8ebd99, type: 3}
 --- !u!224 &722665627 stripped
@@ -4306,6 +4423,14 @@ PrefabInstance:
       propertyPath: m_text
       value: VOLTAR PARA O JOGO (ESC)
       objectReference: {fileID: 0}
+    - target: {fileID: 9012228195467955189, guid: 73e5ed30c7660a6489b31b17c3e95ef2, type: 3}
+      propertyPath: m_StringReference.m_TableEntryReference.m_KeyId
+      value: 14999461888
+      objectReference: {fileID: 0}
+    - target: {fileID: 9012228195467955189, guid: 73e5ed30c7660a6489b31b17c3e95ef2, type: 3}
+      propertyPath: m_StringReference.m_TableReference.m_TableCollectionName
+      value: GUID:dc66eb524150e344ba65add02a8e7c7a
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 73e5ed30c7660a6489b31b17c3e95ef2, type: 3}
 --- !u!224 &753107737 stripped
@@ -4427,6 +4552,7 @@ GameObject:
   - component: {fileID: 789188096}
   - component: {fileID: 789188098}
   - component: {fileID: 789188097}
+  - component: {fileID: 789188099}
   m_Layer: 5
   m_Name: TotalPointsToWinTitle
   m_TagString: Untagged
@@ -4551,6 +4677,46 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 789188095}
   m_CullTransparentMesh: 1
+--- !u!114 &789188099
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 789188095}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56eb0353ae6e5124bb35b17aff880f16, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_StringReference:
+    m_TableReference:
+      m_TableCollectionName: GUID:8616d92d8e3a5804dbd3e81262c40e61
+    m_TableEntryReference:
+      m_KeyId: 2645008424960
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  m_FormatArguments: []
+  m_UpdateString:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 789188097}
+        m_TargetAssemblyTypeName: TMPro.TMP_Text, Unity.TextMeshPro
+        m_MethodName: set_text
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  references:
+    version: 2
+    RefIds: []
 --- !u!1 &808994744
 GameObject:
   m_ObjectHideFlags: 0
@@ -5947,6 +6113,14 @@ PrefabInstance:
       propertyPath: m_text
       value: MENU PRINCIPAL
       objectReference: {fileID: 0}
+    - target: {fileID: 9012228195467955189, guid: 73e5ed30c7660a6489b31b17c3e95ef2, type: 3}
+      propertyPath: m_StringReference.m_TableEntryReference.m_KeyId
+      value: 2774055702528
+      objectReference: {fileID: 0}
+    - target: {fileID: 9012228195467955189, guid: 73e5ed30c7660a6489b31b17c3e95ef2, type: 3}
+      propertyPath: m_StringReference.m_TableReference.m_TableCollectionName
+      value: GUID:00a35efc4b32db0438833956ca92725d
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 73e5ed30c7660a6489b31b17c3e95ef2, type: 3}
 --- !u!224 &1051626347 stripped
@@ -6019,6 +6193,62 @@ MonoBehaviour:
   m_ChildScaleWidth: 0
   m_ChildScaleHeight: 0
   m_ReverseArrangement: 0
+--- !u!1 &1064480737 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1233194245023275528, guid: 9e50d5332210c634193fba6763550342, type: 3}
+  m_PrefabInstance: {fileID: 1233194243798314027}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1064480739 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1233194245023275534, guid: 9e50d5332210c634193fba6763550342, type: 3}
+  m_PrefabInstance: {fileID: 1233194243798314027}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1064480737}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1064480741
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1064480737}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56eb0353ae6e5124bb35b17aff880f16, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_StringReference:
+    m_TableReference:
+      m_TableCollectionName: GUID:dc66eb524150e344ba65add02a8e7c7a
+    m_TableEntryReference:
+      m_KeyId: 811590066176
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  m_FormatArguments: []
+  m_UpdateString:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1064480739}
+        m_TargetAssemblyTypeName: TMPro.TMP_Text, Unity.TextMeshPro
+        m_MethodName: set_text
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  references:
+    version: 2
+    RefIds: []
 --- !u!1 &1072344377
 GameObject:
   m_ObjectHideFlags: 0
@@ -6287,6 +6517,14 @@ PrefabInstance:
     - target: {fileID: 6820598854741499060, guid: 73e5ed30c7660a6489b31b17c3e95ef2, type: 3}
       propertyPath: m_text
       value: MENU PRINCIPAL
+      objectReference: {fileID: 0}
+    - target: {fileID: 9012228195467955189, guid: 73e5ed30c7660a6489b31b17c3e95ef2, type: 3}
+      propertyPath: m_StringReference.m_TableEntryReference.m_KeyId
+      value: 320432873472
+      objectReference: {fileID: 0}
+    - target: {fileID: 9012228195467955189, guid: 73e5ed30c7660a6489b31b17c3e95ef2, type: 3}
+      propertyPath: m_StringReference.m_TableReference.m_TableCollectionName
+      value: GUID:97bc40b774d982945915c976a095661e
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 73e5ed30c7660a6489b31b17c3e95ef2, type: 3}
@@ -7143,6 +7381,14 @@ PrefabInstance:
     - target: {fileID: 6820598854741499060, guid: 73e5ed30c7660a6489b31b17c3e95ef2, type: 3}
       propertyPath: m_fontStyle
       value: 17
+      objectReference: {fileID: 0}
+    - target: {fileID: 9012228195467955189, guid: 73e5ed30c7660a6489b31b17c3e95ef2, type: 3}
+      propertyPath: m_StringReference.m_TableEntryReference.m_KeyId
+      value: 1353489948672
+      objectReference: {fileID: 0}
+    - target: {fileID: 9012228195467955189, guid: 73e5ed30c7660a6489b31b17c3e95ef2, type: 3}
+      propertyPath: m_StringReference.m_TableReference.m_TableCollectionName
+      value: GUID:d550f58b7ecb4924592696a5d149e241
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 73e5ed30c7660a6489b31b17c3e95ef2, type: 3}
@@ -8067,6 +8313,7 @@ GameObject:
   - component: {fileID: 1421930057}
   - component: {fileID: 1421930059}
   - component: {fileID: 1421930058}
+  - component: {fileID: 1421930060}
   m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -8192,6 +8439,46 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1421930056}
   m_CullTransparentMesh: 1
+--- !u!114 &1421930060
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1421930056}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56eb0353ae6e5124bb35b17aff880f16, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_StringReference:
+    m_TableReference:
+      m_TableCollectionName: GUID:8616d92d8e3a5804dbd3e81262c40e61
+    m_TableEntryReference:
+      m_KeyId: 2914375016448
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  m_FormatArguments: []
+  m_UpdateString:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1421930058}
+        m_TargetAssemblyTypeName: TMPro.TMP_Text, Unity.TextMeshPro
+        m_MethodName: set_text
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  references:
+    version: 2
+    RefIds: []
 --- !u!1001 &1423317833
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8415,6 +8702,7 @@ GameObject:
   - component: {fileID: 1453890154}
   - component: {fileID: 1453890156}
   - component: {fileID: 1453890155}
+  - component: {fileID: 1453890157}
   m_Layer: 5
   m_Name: PointsToWin-Line
   m_TagString: Untagged
@@ -8539,6 +8827,46 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1453890153}
   m_CullTransparentMesh: 1
+--- !u!114 &1453890157
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1453890153}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56eb0353ae6e5124bb35b17aff880f16, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_StringReference:
+    m_TableReference:
+      m_TableCollectionName: GUID:00a35efc4b32db0438833956ca92725d
+    m_TableEntryReference:
+      m_KeyId: 2392277569536
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  m_FormatArguments: []
+  m_UpdateString:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1453890155}
+        m_TargetAssemblyTypeName: TMPro.TMP_Text, Unity.TextMeshPro
+        m_MethodName: set_text
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  references:
+    version: 2
+    RefIds: []
 --- !u!1001 &1466515076
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9066,6 +9394,14 @@ PrefabInstance:
       propertyPath: m_text
       value: VOLTAR
       objectReference: {fileID: 0}
+    - target: {fileID: 9012228195467955189, guid: 73e5ed30c7660a6489b31b17c3e95ef2, type: 3}
+      propertyPath: m_StringReference.m_TableEntryReference.m_KeyId
+      value: 117491248058368
+      objectReference: {fileID: 0}
+    - target: {fileID: 9012228195467955189, guid: 73e5ed30c7660a6489b31b17c3e95ef2, type: 3}
+      propertyPath: m_StringReference.m_TableReference.m_TableCollectionName
+      value: GUID:8616d92d8e3a5804dbd3e81262c40e61
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 73e5ed30c7660a6489b31b17c3e95ef2, type: 3}
 --- !u!224 &1530474609 stripped
@@ -9179,6 +9515,10 @@ PrefabInstance:
       propertyPath: m_fontSize
       value: 72
       objectReference: {fileID: 0}
+    - target: {fileID: 1233194245023275534, guid: 9e50d5332210c634193fba6763550342, type: 3}
+      propertyPath: m_fontStyle
+      value: 17
+      objectReference: {fileID: 0}
     - target: {fileID: 1233194245023275535, guid: 9e50d5332210c634193fba6763550342, type: 3}
       propertyPath: m_AnchorMax.y
       value: 1
@@ -9282,6 +9622,14 @@ PrefabInstance:
     - target: {fileID: 1233194245533867628, guid: 9e50d5332210c634193fba6763550342, type: 3}
       propertyPath: m_Name
       value: 'TitleContainer: Pause'
+      objectReference: {fileID: 0}
+    - target: {fileID: 7930719772643772464, guid: 9e50d5332210c634193fba6763550342, type: 3}
+      propertyPath: m_StringReference.m_TableEntryReference.m_KeyId
+      value: 1834698252288
+      objectReference: {fileID: 0}
+    - target: {fileID: 7930719772643772464, guid: 9e50d5332210c634193fba6763550342, type: 3}
+      propertyPath: m_StringReference.m_TableReference.m_TableCollectionName
+      value: GUID:8616d92d8e3a5804dbd3e81262c40e61
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9e50d5332210c634193fba6763550342, type: 3}
@@ -9532,6 +9880,14 @@ PrefabInstance:
     - target: {fileID: 6820598854741499060, guid: 73e5ed30c7660a6489b31b17c3e95ef2, type: 3}
       propertyPath: m_text
       value: MENU PRINCIPAL
+      objectReference: {fileID: 0}
+    - target: {fileID: 9012228195467955189, guid: 73e5ed30c7660a6489b31b17c3e95ef2, type: 3}
+      propertyPath: m_StringReference.m_TableEntryReference.m_KeyId
+      value: 274723348480
+      objectReference: {fileID: 0}
+    - target: {fileID: 9012228195467955189, guid: 73e5ed30c7660a6489b31b17c3e95ef2, type: 3}
+      propertyPath: m_StringReference.m_TableReference.m_TableCollectionName
+      value: GUID:dc66eb524150e344ba65add02a8e7c7a
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 73e5ed30c7660a6489b31b17c3e95ef2, type: 3}
@@ -9959,6 +10315,14 @@ PrefabInstance:
       propertyPath: m_text
       value: JOGAR NOVAMENTE
       objectReference: {fileID: 0}
+    - target: {fileID: 9012228195467955189, guid: 73e5ed30c7660a6489b31b17c3e95ef2, type: 3}
+      propertyPath: m_StringReference.m_TableEntryReference.m_KeyId
+      value: 132171538432
+      objectReference: {fileID: 0}
+    - target: {fileID: 9012228195467955189, guid: 73e5ed30c7660a6489b31b17c3e95ef2, type: 3}
+      propertyPath: m_StringReference.m_TableReference.m_TableCollectionName
+      value: GUID:97bc40b774d982945915c976a095661e
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 73e5ed30c7660a6489b31b17c3e95ef2, type: 3}
 --- !u!224 &1667365613 stripped
@@ -10065,6 +10429,14 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1382662900}
+    - target: {fileID: 8820044238880859381, guid: 5bbf63e2c14b53b4fac82561ec8ebd99, type: 3}
+      propertyPath: m_StringReference.m_TableEntryReference.m_KeyId
+      value: 413919715328
+      objectReference: {fileID: 0}
+    - target: {fileID: 8820044238880859381, guid: 5bbf63e2c14b53b4fac82561ec8ebd99, type: 3}
+      propertyPath: m_StringReference.m_TableReference.m_TableCollectionName
+      value: GUID:dc66eb524150e344ba65add02a8e7c7a
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5bbf63e2c14b53b4fac82561ec8ebd99, type: 3}
 --- !u!224 &1680649158 stripped
@@ -10083,6 +10455,7 @@ GameObject:
   - component: {fileID: 1691268678}
   - component: {fileID: 1691268680}
   - component: {fileID: 1691268679}
+  - component: {fileID: 1691268681}
   m_Layer: 5
   m_Name: TittleLanguage
   m_TagString: Untagged
@@ -10207,6 +10580,34 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1691268677}
   m_CullTransparentMesh: 1
+--- !u!114 &1691268681
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1691268677}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56eb0353ae6e5124bb35b17aff880f16, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_StringReference:
+    m_TableReference:
+      m_TableCollectionName: GUID:8616d92d8e3a5804dbd3e81262c40e61
+    m_TableEntryReference:
+      m_KeyId: 116997742055424
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  m_FormatArguments: []
+  m_UpdateString:
+    m_PersistentCalls:
+      m_Calls: []
+  references:
+    version: 2
+    RefIds: []
 --- !u!114 &1704251463 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 8387511712728518827, guid: d7d8359cecbba67459e9aa1fdef33e5d, type: 3}
@@ -10229,6 +10630,7 @@ GameObject:
   - component: {fileID: 1739142944}
   - component: {fileID: 1739142946}
   - component: {fileID: 1739142945}
+  - component: {fileID: 1739142947}
   m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -10353,6 +10755,46 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1739142943}
   m_CullTransparentMesh: 1
+--- !u!114 &1739142947
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1739142943}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56eb0353ae6e5124bb35b17aff880f16, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_StringReference:
+    m_TableReference:
+      m_TableCollectionName: GUID:8616d92d8e3a5804dbd3e81262c40e61
+    m_TableEntryReference:
+      m_KeyId: 115636312920064
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  m_FormatArguments: []
+  m_UpdateString:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1739142945}
+        m_TargetAssemblyTypeName: TMPro.TMP_Text, Unity.TextMeshPro
+        m_MethodName: set_text
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  references:
+    version: 2
+    RefIds: []
 --- !u!1 &1780541848
 GameObject:
   m_ObjectHideFlags: 0
@@ -12032,6 +12474,7 @@ GameObject:
   - component: {fileID: 2133508073}
   - component: {fileID: 2133508075}
   - component: {fileID: 2133508074}
+  - component: {fileID: 2133508076}
   m_Layer: 5
   m_Name: LastWinnerTitle
   m_TagString: Untagged
@@ -12156,6 +12599,46 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2133508072}
   m_CullTransparentMesh: 1
+--- !u!114 &2133508076
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2133508072}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56eb0353ae6e5124bb35b17aff880f16, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_StringReference:
+    m_TableReference:
+      m_TableCollectionName: GUID:8616d92d8e3a5804dbd3e81262c40e61
+    m_TableEntryReference:
+      m_KeyId: 2018807226368
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  m_FormatArguments: []
+  m_UpdateString:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 2133508074}
+        m_TargetAssemblyTypeName: TMPro.TMP_Text, Unity.TextMeshPro
+        m_MethodName: set_text
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  references:
+    version: 2
+    RefIds: []
 --- !u!1001 &537839627955872294
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12262,6 +12745,18 @@ PrefabInstance:
     - target: {fileID: 6472069381069501364, guid: 5bbf63e2c14b53b4fac82561ec8ebd99, type: 3}
       propertyPath: m_text
       value: "CR\xC9DITOS DO JOGO"
+      objectReference: {fileID: 0}
+    - target: {fileID: 6472069381069501364, guid: 5bbf63e2c14b53b4fac82561ec8ebd99, type: 3}
+      propertyPath: m_fontStyle
+      value: 17
+      objectReference: {fileID: 0}
+    - target: {fileID: 8820044238880859381, guid: 5bbf63e2c14b53b4fac82561ec8ebd99, type: 3}
+      propertyPath: m_StringReference.m_TableEntryReference.m_KeyId
+      value: 1716393713664
+      objectReference: {fileID: 0}
+    - target: {fileID: 8820044238880859381, guid: 5bbf63e2c14b53b4fac82561ec8ebd99, type: 3}
+      propertyPath: m_StringReference.m_TableReference.m_TableCollectionName
+      value: GUID:d550f58b7ecb4924592696a5d149e241
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5bbf63e2c14b53b4fac82561ec8ebd99, type: 3}
@@ -13225,6 +13720,18 @@ PrefabInstance:
       propertyPath: m_text
       value: JOGAR
       objectReference: {fileID: 0}
+    - target: {fileID: 6820598854741499060, guid: 73e5ed30c7660a6489b31b17c3e95ef2, type: 3}
+      propertyPath: m_fontStyle
+      value: 17
+      objectReference: {fileID: 0}
+    - target: {fileID: 9012228195467955189, guid: 73e5ed30c7660a6489b31b17c3e95ef2, type: 3}
+      propertyPath: m_StringReference.m_TableEntryReference.m_KeyId
+      value: 1104759332864
+      objectReference: {fileID: 0}
+    - target: {fileID: 9012228195467955189, guid: 73e5ed30c7660a6489b31b17c3e95ef2, type: 3}
+      propertyPath: m_StringReference.m_TableReference.m_TableCollectionName
+      value: GUID:d550f58b7ecb4924592696a5d149e241
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 73e5ed30c7660a6489b31b17c3e95ef2, type: 3}
 --- !u!1001 &7298710770596929675
@@ -13367,6 +13874,14 @@ PrefabInstance:
     - target: {fileID: 1751972378156403650, guid: ad6af7815f9026d4584c80e30a21b2bf, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 3429288863122241042, guid: ad6af7815f9026d4584c80e30a21b2bf, type: 3}
+      propertyPath: m_StringReference.m_TableEntryReference.m_KeyId
+      value: 3108466434048
+      objectReference: {fileID: 0}
+    - target: {fileID: 3429288863122241042, guid: ad6af7815f9026d4584c80e30a21b2bf, type: 3}
+      propertyPath: m_StringReference.m_TableReference.m_TableCollectionName
+      value: GUID:8616d92d8e3a5804dbd3e81262c40e61
       objectReference: {fileID: 0}
     - target: {fileID: 8016067585598415138, guid: ad6af7815f9026d4584c80e30a21b2bf, type: 3}
       propertyPath: m_Name

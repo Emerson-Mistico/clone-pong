@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: creditsScreen_en
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: en
+  m_SharedData: {fileID: 11400000, guid: 93466540172d76b49a5caca9d035059a, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 6125441024
+    m_Localized: 'Clone Pong is a game inspired by the classic 1972 game created
+      by Allan Alcorn for Atari. This version, with small adaptations, was developed
+      by Emerson Mistico as an activity for the Unity course at E.B.A.C. to test
+      and improve Unity, C#, and GitHub concepts (where the game repository is available).
+
+      
+
+      Background
+      Images: Developed with MidJourney
+
+      Sound Effects: Mulula (Unity Asset
+      Store - Free)
+
+      Background Music: Eons After (Unity Asset Store - Free)
+
+      Flag
+      Icons: Alejandro Cuffia (dribbble.com - Free)'
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

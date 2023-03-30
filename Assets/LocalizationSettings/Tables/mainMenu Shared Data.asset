@@ -1,0 +1,56 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b11a58205ec3474ca216360e9fa74a8, type: 3}
+  m_Name: mainMenu Shared Data
+  m_EditorClassIdentifier: 
+  m_TableCollectionName: mainMenu
+  m_TableCollectionNameGuidString: d550f58b7ecb4924592696a5d149e241
+  m_Entries:
+  - m_Id: 177113505792
+    m_Key: buttonPlayAgain
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1104759332864
+    m_Key: buttonPlay
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1219737788416
+    m_Key: buttonHowToPlay
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1353489948672
+    m_Key: buttonRestoreDefaults
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1544364335104
+    m_Key: buttonSettings
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1716393713664
+    m_Key: buttonCredits
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1857951473664
+    m_Key: buttonExit
+    m_Metadata:
+      m_Items: []
+  m_Metadata:
+    m_Items: []
+  m_KeyGenerator:
+    rid: 2097842489790300160
+  references:
+    version: 2
+    RefIds:
+    - rid: 2097842489790300160
+      type: {class: DistributedUIDGenerator, ns: UnityEngine.Localization.Tables, asm: Unity.Localization}
+      data:
+        m_CustomEpoch: 1680183211773

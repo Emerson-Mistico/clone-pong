@@ -1,0 +1,92 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: settingsMenu_pt-BR
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: pt-BR
+  m_SharedData: {fileID: 11400000, guid: 8616d92d8e3a5804dbd3e81262c40e61, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 365962043392
+    m_Localized: "Configura\xE7\xF5es do jogador:"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 587303854080
+    m_Localized: Jogador
+    m_Metadata:
+      m_Items: []
+  - m_Id: 669214416896
+    m_Localized: Cor do jogador
+    m_Metadata:
+      m_Items: []
+  - m_Id: 796020809728
+    m_Localized: Nome do jogador
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1039550488576
+    m_Localized: Insira o nome aqui...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1639566647296
+    m_Localized: Alterar nome
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1834698252288
+    m_Localized: "Configura\xE7\xF5es"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2018807226368
+    m_Localized: "\xDAltimo vencedor (Higscore):"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2471523622912
+    m_Localized: "N\xE3o h\xE1 vencedor registrado"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2645008424960
+    m_Localized: 'Total de pontos para vencer:'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2914375016448
+    m_Localized: "AVISO: ao escolher alterar o n\xFAmero de ponto o jogo ser\xE1
+      reiniciado e o placar zerado."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3108466434048
+    m_Localized: "M\xFAsica"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3229375635456
+    m_Localized: Volume Geral
+    m_Metadata:
+      m_Items: []
+  - m_Id: 115636312920064
+    m_Localized: Alterar
+    m_Metadata:
+      m_Items: []
+  - m_Id: 116382152445952
+    m_Localized: Efeitos
+    m_Metadata:
+      m_Items: []
+  - m_Id: 116997742055424
+    m_Localized: Selecionar Idioma
+    m_Metadata:
+      m_Items: []
+  - m_Id: 117491248058368
+    m_Localized: Voltar
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []
