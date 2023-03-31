@@ -23,10 +23,6 @@ MonoBehaviour:
     m_Key: greetingsMessage
     m_Metadata:
       m_Items: []
-  - m_Id: 3459936526336
-    m_Key: New Entry
-    m_Metadata:
-      m_Items: []
   - m_Id: 3998606794752
     m_Key: gameVersion
     m_Metadata:

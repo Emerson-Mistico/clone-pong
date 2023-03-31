@@ -20,7 +20,7 @@ MonoBehaviour:
   m_TableData:
   - m_Id: 36697722880
     m_Localized: "Para mover seu jogador para cima utilize: <KEYUP> e para mover
-      seu jogador para baixo utilize: <KEYDOWN>. Utilize essas teclas para rebater
+      seu jogador para baixo utilize: <KEYDOWN> Utilize essas teclas para rebater
       a bola e marcar pontos no seu advers\xE1rio."
     m_Metadata:
       m_Items: []
@@ -30,14 +30,6 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 2392277569536
     m_Localized: "O total de pontos pode ser alterado no Menu de Configura\xE7\xF5es."
-    m_Metadata:
-      m_Items: []
-  - m_Id: 2774055702528
-    m_Localized: Menu Principal
-    m_Metadata:
-      m_Items: []
-  - m_Id: 2901591904256
-    m_Localized: Fechar Jogo (Sair)
     m_Metadata:
       m_Items: []
   references:

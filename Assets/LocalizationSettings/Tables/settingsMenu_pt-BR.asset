@@ -38,10 +38,6 @@ MonoBehaviour:
     m_Localized: Insira o nome aqui...
     m_Metadata:
       m_Items: []
-  - m_Id: 1639566647296
-    m_Localized: Alterar nome
-    m_Metadata:
-      m_Items: []
   - m_Id: 1834698252288
     m_Localized: "Configura\xE7\xF5es"
     m_Metadata:
@@ -55,7 +51,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 2645008424960
-    m_Localized: 'Total de pontos para vencer:'
+    m_Localized: 'Pontos para vencer:'
     m_Metadata:
       m_Items: []
   - m_Id: 2914375016448
@@ -71,20 +67,12 @@ MonoBehaviour:
     m_Localized: Volume Geral
     m_Metadata:
       m_Items: []
-  - m_Id: 115636312920064
-    m_Localized: Alterar
-    m_Metadata:
-      m_Items: []
   - m_Id: 116382152445952
     m_Localized: Efeitos
     m_Metadata:
       m_Items: []
   - m_Id: 116997742055424
     m_Localized: Selecionar Idioma
-    m_Metadata:
-      m_Items: []
-  - m_Id: 117491248058368
-    m_Localized: Voltar
     m_Metadata:
       m_Items: []
   references:

@@ -18,18 +18,6 @@ MonoBehaviour:
   m_Metadata:
     m_Items: []
   m_TableData:
-  - m_Id: 14999461888
-    m_Localized: "Return to Game (ESC)\r"
-    m_Metadata:
-      m_Items: []
-  - m_Id: 274723348480
-    m_Localized: "Main Menu\r"
-    m_Metadata:
-      m_Items: []
-  - m_Id: 413919715328
-    m_Localized: Close Game (Exit)
-    m_Metadata:
-      m_Items: []
   - m_Id: 811590066176
     m_Localized: Game Paused
     m_Metadata:

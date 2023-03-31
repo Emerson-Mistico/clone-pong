@@ -15,18 +15,6 @@ MonoBehaviour:
   m_TableCollectionName: endGameMenu
   m_TableCollectionNameGuidString: 97bc40b774d982945915c976a095661e
   m_Entries:
-  - m_Id: 132171538432
-    m_Key: buttonPlayAgain
-    m_Metadata:
-      m_Items: []
-  - m_Id: 320432873472
-    m_Key: buttonMainMenu
-    m_Metadata:
-      m_Items: []
-  - m_Id: 422727753728
-    m_Key: buttonQuitExit
-    m_Metadata:
-      m_Items: []
   - m_Id: 610330583040
     m_Key: messageWinner
     m_Metadata:

@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5b11a58205ec3474ca216360e9fa74a8, type: 3}
-  m_Name: mainMenu Shared Data
+  m_Name: buttons Shared Data
   m_EditorClassIdentifier: 
-  m_TableCollectionName: mainMenu
+  m_TableCollectionName: buttons
   m_TableCollectionNameGuidString: d550f58b7ecb4924592696a5d149e241
   m_Entries:
   - m_Id: 177113505792
@@ -41,6 +41,22 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 1857951473664
     m_Key: buttonExit
+    m_Metadata:
+      m_Items: []
+  - m_Id: 407590027239424
+    m_Key: buttonReturn
+    m_Metadata:
+      m_Items: []
+  - m_Id: 407914330824704
+    m_Key: buttonMainMenu
+    m_Metadata:
+      m_Items: []
+  - m_Id: 408256279846912
+    m_Key: buttonChangeName
+    m_Metadata:
+      m_Items: []
+  - m_Id: 408566645760000
+    m_Key: buttonAplyChange
     m_Metadata:
       m_Items: []
   m_Metadata:

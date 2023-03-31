@@ -18,18 +18,6 @@ MonoBehaviour:
   m_Metadata:
     m_Items: []
   m_TableData:
-  - m_Id: 132171538432
-    m_Localized: Jogar Novamente
-    m_Metadata:
-      m_Items: []
-  - m_Id: 320432873472
-    m_Localized: Menu Principal
-    m_Metadata:
-      m_Items: []
-  - m_Id: 422727753728
-    m_Localized: Fechar Jogo (Sair)
-    m_Metadata:
-      m_Items: []
   - m_Id: 610330583040
     m_Localized: Ganhou o jogo!
     m_Metadata:

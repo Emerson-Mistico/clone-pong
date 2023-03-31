@@ -10,40 +10,56 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
-  m_Name: mainMenu_it-IT
+  m_Name: buttons_en
   m_EditorClassIdentifier: 
   m_LocaleId:
-    m_Code: it-IT
+    m_Code: en
   m_SharedData: {fileID: 11400000, guid: d550f58b7ecb4924592696a5d149e241, type: 2}
   m_Metadata:
     m_Items: []
   m_TableData:
   - m_Id: 177113505792
-    m_Localized: Gioca di nuovo
+    m_Localized: Play Again
     m_Metadata:
       m_Items: []
   - m_Id: 1104759332864
-    m_Localized: Giocare
+    m_Localized: Play
     m_Metadata:
       m_Items: []
   - m_Id: 1219737788416
-    m_Localized: Come Giocare
+    m_Localized: How to Play
     m_Metadata:
       m_Items: []
   - m_Id: 1353489948672
-    m_Localized: Ripristina predefiniti
+    m_Localized: Restore Defaults
     m_Metadata:
       m_Items: []
   - m_Id: 1544364335104
-    m_Localized: Impostazioni
+    m_Localized: Settings
     m_Metadata:
       m_Items: []
   - m_Id: 1716393713664
-    m_Localized: Crediti del Gioco
+    m_Localized: Game Credits
     m_Metadata:
       m_Items: []
   - m_Id: 1857951473664
-    m_Localized: Chiudi Gioco (Esci)
+    m_Localized: Close Game (Exit)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 407590027239424
+    m_Localized: Return to Game (ESC)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 407914330824704
+    m_Localized: Main Menu
+    m_Metadata:
+      m_Items: []
+  - m_Id: 408256279846912
+    m_Localized: Change Name
+    m_Metadata:
+      m_Items: []
+  - m_Id: 408566645760000
+    m_Localized: Change
     m_Metadata:
       m_Items: []
   references:

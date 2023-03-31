@@ -16,14 +16,16 @@ MonoBehaviour:
     m_Code: en
   m_SharedData: {fileID: 11400000, guid: 00a35efc4b32db0438833956ca92725d, type: 2}
   m_Metadata:
-    m_Items: []
+    m_Items:
+    - rid: 2097842509904609291
   m_TableData:
   - m_Id: 36697722880
     m_Localized: 'To move your player up use: <KEYUP> and to move your player down
       use: <KEYDOWN>. Use these keys to hit the ball and score points against your
       opponent.'
     m_Metadata:
-      m_Items: []
+      m_Items:
+      - rid: 2097842509904609291
   - m_Id: 1934075023360
     m_Localized: The player who scores <POINTS> first wins the game*
     m_Metadata:
@@ -32,14 +34,10 @@ MonoBehaviour:
     m_Localized: The total number of points can be changed in the Settings Menu.
     m_Metadata:
       m_Items: []
-  - m_Id: 2774055702528
-    m_Localized: Main Menu
-    m_Metadata:
-      m_Items: []
-  - m_Id: 2901591904256
-    m_Localized: Quit Game (Exit)
-    m_Metadata:
-      m_Items: []
   references:
     version: 2
-    RefIds: []
+    RefIds:
+    - rid: 2097842509904609291
+      type: {class: SmartFormatTag, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_Entries: 00d05a8b08000000

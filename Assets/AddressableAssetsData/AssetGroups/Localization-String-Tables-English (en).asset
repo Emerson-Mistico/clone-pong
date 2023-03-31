@@ -24,7 +24,7 @@ MonoBehaviour:
     - Locale-en
     - Preload
   - m_GUID: b498e54f416ffa848a777db73f0386e2
-    m_Address: mainMenu_en
+    m_Address: buttons_en
     m_ReadOnly: 1
     m_SerializedLabels:
     - Locale-en

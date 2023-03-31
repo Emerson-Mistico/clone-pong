@@ -35,10 +35,6 @@ MonoBehaviour:
     m_Key: textFieldPlayerName
     m_Metadata:
       m_Items: []
-  - m_Id: 1639566647296
-    m_Key: buttonChangeName
-    m_Metadata:
-      m_Items: []
   - m_Id: 1834698252288
     m_Key: textScreenTitle
     m_Metadata:
@@ -67,20 +63,12 @@ MonoBehaviour:
     m_Key: textVolume
     m_Metadata:
       m_Items: []
-  - m_Id: 115636312920064
-    m_Key: buttonAplyChange
-    m_Metadata:
-      m_Items: []
   - m_Id: 116382152445952
     m_Key: textEffects
     m_Metadata:
       m_Items: []
   - m_Id: 116997742055424
     m_Key: textSelectLanguage
-    m_Metadata:
-      m_Items: []
-  - m_Id: 117491248058368
-    m_Key: buttonReturn
     m_Metadata:
       m_Items: []
   m_Metadata:

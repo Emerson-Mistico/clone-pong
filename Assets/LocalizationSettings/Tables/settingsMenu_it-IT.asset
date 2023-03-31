@@ -38,10 +38,6 @@ MonoBehaviour:
     m_Localized: Inserisci il nome qui...
     m_Metadata:
       m_Items: []
-  - m_Id: 1639566647296
-    m_Localized: Cambia nome
-    m_Metadata:
-      m_Items: []
   - m_Id: 1834698252288
     m_Localized: Impostazioni
     m_Metadata:
@@ -71,20 +67,12 @@ MonoBehaviour:
     m_Localized: Volume Generale
     m_Metadata:
       m_Items: []
-  - m_Id: 115636312920064
-    m_Localized: Cambia
-    m_Metadata:
-      m_Items: []
   - m_Id: 116382152445952
     m_Localized: Effetti
     m_Metadata:
       m_Items: []
   - m_Id: 116997742055424
     m_Localized: Seleziona la Lingua
-    m_Metadata:
-      m_Items: []
-  - m_Id: 117491248058368
-    m_Localized: Indietro
     m_Metadata:
       m_Items: []
   references:

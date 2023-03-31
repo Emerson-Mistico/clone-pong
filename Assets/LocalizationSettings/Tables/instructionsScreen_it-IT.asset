@@ -32,14 +32,6 @@ MonoBehaviour:
     m_Localized: "Il numero totale di punti pu\xF2 essere modificato nel menu Impostazioni."
     m_Metadata:
       m_Items: []
-  - m_Id: 2774055702528
-    m_Localized: Menu Principale
-    m_Metadata:
-      m_Items: []
-  - m_Id: 2901591904256
-    m_Localized: Chiudi Gioco (Esci)
-    m_Metadata:
-      m_Items: []
   references:
     version: 2
     RefIds: []
