@@ -16,7 +16,8 @@ MonoBehaviour:
     m_Code: it-IT
   m_SharedData: {fileID: 11400000, guid: 00a35efc4b32db0438833956ca92725d, type: 2}
   m_Metadata:
-    m_Items: []
+    m_Items:
+    - rid: 6127400222911627305
   m_TableData:
   - m_Id: 36697722880
     m_Localized: 'Per muovere il tuo giocatore verso l''alto usa: <KEYUP> e per muovere
@@ -25,13 +26,19 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 1934075023360
-    m_Localized: Il giocatore che segna <PUNTI> per primo vince il gioco*
+    m_Localized: Il giocatore che segna <color=yellow>{global.pointsToWin:plural:{}
+      punto | {} punti}</color> per primo vince il gioco*
     m_Metadata:
-      m_Items: []
+      m_Items:
+      - rid: 6127400222911627305
   - m_Id: 2392277569536
     m_Localized: "Il numero totale di punti pu\xF2 essere modificato nel menu Impostazioni."
     m_Metadata:
       m_Items: []
   references:
     version: 2
-    RefIds: []
+    RefIds:
+    - rid: 6127400222911627305
+      type: {class: SmartFormatTag, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_Entries: 00d0da4fc2010000
