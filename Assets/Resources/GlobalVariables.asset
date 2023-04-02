@@ -22,4 +22,4 @@ MonoBehaviour:
     - rid: 6127400222911627304
       type: {class: IntVariable, ns: UnityEngine.Localization.SmartFormat.PersistentVariables, asm: Unity.Localization}
       data:
-        m_Value: 44
+        m_Value: 3

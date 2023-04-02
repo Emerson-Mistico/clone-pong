@@ -1,10 +1,14 @@
 using System.Collections;
 using UnityEngine;
 using UnityEngine.Localization.Settings;
+using UnityEngine.Localization.SmartFormat.Extensions;
+using UnityEngine.Localization.SmartFormat.PersistentVariables;
 
 public class LanguageManager : MonoBehaviour
 {
     public static LanguageManager instance;
+
+    public IntVariable pointsToWin;
 
     private bool changeActive = false;
 
@@ -27,6 +31,5 @@ public class LanguageManager : MonoBehaviour
             return;
         }
         StartCoroutine(SetLocale(localeID));
-
     }
 }

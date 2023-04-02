@@ -5,6 +5,9 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using TMPro;
 using UnityEngine.Localization;
+using UnityEngine.Localization.Settings;
+using UnityEngine.Localization.SmartFormat.Extensions;
+using UnityEngine.Localization.SmartFormat.PersistentVariables;
 
 public class GameManager : MonoBehaviour
 {
@@ -15,7 +18,7 @@ public class GameManager : MonoBehaviour
     [Header ("Game Settings")]
     public BallBase ballBase;
     public TMP_InputField inputFieldPointsToWin;
-    public TextMeshProUGUI instructiuonsPointsToWin;
+    public IntVariable instructiuonsPointsToWin;
 
     public int defaultPointsToWin = 3;
     public string defaultPlayerName1 = "Jogador 1";
@@ -63,30 +66,30 @@ public class GameManager : MonoBehaviour
 
         // set as default values to play
         inputFieldPointsToWin.text = defaultPointsToWin.ToString();
-        instructiuonsPointsToWin.text = instructiuonsPointsToWin.text.Replace("<POINTS>", defaultPointsToWin.ToString());
 
         PlayerPrefs.SetInt("pointsToWin", defaultPointsToWin);
+
+        // update global variables to localization
+        var source = LocalizationSettings.StringDatabase.SmartFormatter.GetSourceExtension<PersistentVariablesSource>();
+        instructiuonsPointsToWin = source["global"]["pointsToWin"] as IntVariable;
+        instructiuonsPointsToWin.Value = PlayerPrefs.GetInt("pointsToWin");
+
         PlayerPrefs.SetString("lastWinner", _lastWinner);
 
         // update HUD and Menu point values and names
         hudLastWinner.text = _lastWinner;
         hudLastWinnerSettings.text = _lastWinner;
-
         hudPlayerName1.text = defaultPlayerName1.ToString();
         hudPlayerName2.text = defaultPlayerName2.ToString();
-
         settingsPlayerName1.text = defaultPlayerName1.ToString();
         settingsPlayerName2.text = defaultPlayerName2.ToString();
-
         refPlayer1.name = defaultPlayerName1.ToString();
         refPlayer2.name = defaultPlayerName2.ToString();
-
         instructionsPlayerName1.text= defaultPlayerName1.ToString();
         instructionsPlayerName2.text= defaultPlayerName2.ToString();
 
         instructionsKeyPlayer1.text = instructionsKeyPlayer1.text.Replace("<KEYUP>", refPlayer1.keyCodeMoveUp.ToString());
         instructionsKeyPlayer1.text = instructionsKeyPlayer1.text.Replace("<KEYDOWN>", refPlayer1.keycodeMoveDown.ToString());
-        
         instructionsKeyPlayer2.text = instructionsKeyPlayer2.text.Replace("<KEYUP>", refPlayer2.keyCodeMoveUp.ToString());
         instructionsKeyPlayer2.text = instructionsKeyPlayer2.text.Replace("<KEYDOWN>", refPlayer2.keycodeMoveDown.ToString());
 
@@ -97,8 +100,12 @@ public class GameManager : MonoBehaviour
     {
         _currentPointsToWin = inputFieldPointsToWin.text;
         PlayerPrefs.SetInt("pointsToWin", int.Parse(_currentPointsToWin));
-        instructiuonsPointsToWin.text = "O jogador que marcar <color=yellow>" + _currentPointsToWin + "</color> primeiro vence o jogo*.";
-        
+
+        // update global variables to localization
+        var source = LocalizationSettings.StringDatabase.SmartFormatter.GetSourceExtension<PersistentVariablesSource>();
+        instructiuonsPointsToWin = source["global"]["pointsToWin"] as IntVariable;
+        instructiuonsPointsToWin.Value = PlayerPrefs.GetInt("pointsToWin");
+
         ResetBallPosition(PlayerPrefs.GetString("lastWinner"), false);
         refPlayer1.currentPoints = 0;
         refPlayer2.currentPoints = 0;
