@@ -20,11 +20,12 @@ MonoBehaviour:
     - rid: 6127400222911627288
   m_TableData:
   - m_Id: 36697722880
-    m_Localized: "Para mover seu jogador para cima utilize: <KEYUP> e para mover
-      seu jogador para baixo utilize: <KEYDOWN> Utilize essas teclas para rebater
-      a bola e marcar pontos no seu advers\xE1rio."
+    m_Localized: "Para mover seu jogador para cima utilize: <color=yellow><uppercase><noparse><{global.player1KeyUP}></noparse></uppercase></color>
+      e para mover seu jogador para baixo utilize: <color=yellow><uppercase><noparse><{global.player1KeyDOWN}></noparse></uppercase></color>
+      Utilize essas teclas para rebater a bola e marcar pontos no seu advers\xE1rio."
     m_Metadata:
-      m_Items: []
+      m_Items:
+      - rid: 6127400222911627288
   - m_Id: 1934075023360
     m_Localized: O jogador que marcar <color=yellow>{global.pointsToWin:plural:{}
       ponto | {} pontos}</color> primeiro vence o jogo*
@@ -35,10 +36,17 @@ MonoBehaviour:
     m_Localized: "O total de pontos pode ser alterado no Menu de Configura\xE7\xF5es."
     m_Metadata:
       m_Items: []
+  - m_Id: 988267617558528
+    m_Localized: "Para mover seu jogador para cima utilize: <color=yellow><uppercase><noparse><{global.player2KeyUP}></noparse></uppercase></color>
+      e para mover seu jogador para baixo utilize: <color=yellow><uppercase><noparse><{global.player2KeyDOWN}></noparse></uppercase></color>
+      Utilize essas teclas para rebater a bola e marcar pontos no seu advers\xE1rio."
+    m_Metadata:
+      m_Items:
+      - rid: 6127400222911627288
   references:
     version: 2
     RefIds:
     - rid: 6127400222911627288
       type: {class: SmartFormatTag, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_Entries: 00d0da4fc2010000
+        m_Entries: 00d0da4fc201000000d05a8b0800000000a049fcd2820300

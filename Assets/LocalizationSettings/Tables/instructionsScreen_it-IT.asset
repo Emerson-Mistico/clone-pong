@@ -20,11 +20,12 @@ MonoBehaviour:
     - rid: 6127400222911627305
   m_TableData:
   - m_Id: 36697722880
-    m_Localized: 'Per muovere il tuo giocatore verso l''alto usa: <KEYUP> e per muovere
-      il tuo giocatore verso il basso usa: <KEYDOWN>. Usa queste tasti per colpire
-      la palla e segnare punti contro il tuo avversario.'
+    m_Localized: 'Per muovere il tuo giocatore verso l''alto usa: <color=yellow><uppercase><noparse><{global.player1KeyUP}></noparse></uppercase></color>
+      e per muovere il tuo giocatore verso il basso usa: <color=yellow><uppercase><noparse><{global.player1KeyDOWN}></noparse></uppercase></color>.
+      Usa queste tasti per colpire la palla e segnare punti contro il tuo avversario.'
     m_Metadata:
-      m_Items: []
+      m_Items:
+      - rid: 6127400222911627305
   - m_Id: 1934075023360
     m_Localized: Il giocatore che segna <color=yellow>{global.pointsToWin:plural:{}
       punto | {} punti}</color> per primo vince il gioco*
@@ -35,10 +36,17 @@ MonoBehaviour:
     m_Localized: "Il numero totale di punti pu\xF2 essere modificato nel menu Impostazioni."
     m_Metadata:
       m_Items: []
+  - m_Id: 988267617558528
+    m_Localized: 'Per muovere il tuo giocatore verso l''alto usa: <color=yellow><uppercase><noparse><{global.player2KeyUP}></noparse></uppercase></color>
+      e per muovere il tuo giocatore verso il basso usa: <color=yellow><uppercase><noparse><{global.player2KeyDOWN}></noparse></uppercase></color>.
+      Usa queste tasti per colpire la palla e segnare punti contro il tuo avversario.'
+    m_Metadata:
+      m_Items:
+      - rid: 6127400222911627305
   references:
     version: 2
     RefIds:
     - rid: 6127400222911627305
       type: {class: SmartFormatTag, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_Entries: 00d0da4fc2010000
+        m_Entries: 00d0da4fc201000000d05a8b0800000000a049fcd2820300

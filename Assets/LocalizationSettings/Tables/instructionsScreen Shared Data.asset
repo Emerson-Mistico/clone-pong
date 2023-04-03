@@ -16,7 +16,7 @@ MonoBehaviour:
   m_TableCollectionNameGuidString: 00a35efc4b32db0438833956ca92725d
   m_Entries:
   - m_Id: 36697722880
-    m_Key: textKeys
+    m_Key: textKeysP1
     m_Metadata:
       m_Items: []
   - m_Id: 1934075023360
@@ -25,6 +25,10 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 2392277569536
     m_Key: textInformation
+    m_Metadata:
+      m_Items: []
+  - m_Id: 988267617558528
+    m_Key: textKeysP2
     m_Metadata:
       m_Items: []
   m_Metadata:

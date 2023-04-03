@@ -16,6 +16,18 @@ MonoBehaviour:
   - name: pointsToWin
     variable:
       rid: 6127400222911627304
+  - name: player1KeyUP
+    variable:
+      rid: 6127400222911627308
+  - name: player2KeyUP
+    variable:
+      rid: 6127400222911627309
+  - name: player1KeyDOWN
+    variable:
+      rid: 6127400222911627310
+  - name: player2KeyDOWN
+    variable:
+      rid: 6127400222911627311
   references:
     version: 2
     RefIds:
@@ -23,3 +35,19 @@ MonoBehaviour:
       type: {class: IntVariable, ns: UnityEngine.Localization.SmartFormat.PersistentVariables, asm: Unity.Localization}
       data:
         m_Value: 3
+    - rid: 6127400222911627308
+      type: {class: StringVariable, ns: UnityEngine.Localization.SmartFormat.PersistentVariables, asm: Unity.Localization}
+      data:
+        m_Value: w
+    - rid: 6127400222911627309
+      type: {class: StringVariable, ns: UnityEngine.Localization.SmartFormat.PersistentVariables, asm: Unity.Localization}
+      data:
+        m_Value: Up Arrow
+    - rid: 6127400222911627310
+      type: {class: StringVariable, ns: UnityEngine.Localization.SmartFormat.PersistentVariables, asm: Unity.Localization}
+      data:
+        m_Value: s
+    - rid: 6127400222911627311
+      type: {class: StringVariable, ns: UnityEngine.Localization.SmartFormat.PersistentVariables, asm: Unity.Localization}
+      data:
+        m_Value: Down Arrow

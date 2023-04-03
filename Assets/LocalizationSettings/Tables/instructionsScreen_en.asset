@@ -20,11 +20,12 @@ MonoBehaviour:
     - rid: 6127400222911627294
   m_TableData:
   - m_Id: 36697722880
-    m_Localized: 'To move your player up use: <KEYUP> and to move your player down
-      use: <KEYDOWN>. Use these keys to hit the ball and score points against your
-      opponent.'
+    m_Localized: 'To move your player up use: <color=yellow><uppercase><noparse><{global.player1KeyUP}></noparse></uppercase></color>
+      and to move your player down use: <color=yellow><uppercase><noparse><{global.player1KeyDOWN}></noparse></uppercase></color>.
+      Use these keys to hit the ball and score points against your opponent.'
     m_Metadata:
-      m_Items: []
+      m_Items:
+      - rid: 6127400222911627294
   - m_Id: 1934075023360
     m_Localized: The player who scores <color=yellow>{global.pointsToWin:plural:{}
       point | {} points}</color> first wins the game*
@@ -35,10 +36,17 @@ MonoBehaviour:
     m_Localized: The total number of points can be changed in the Settings Menu.
     m_Metadata:
       m_Items: []
+  - m_Id: 988267617558528
+    m_Localized: 'To move your player up use: <color=yellow><uppercase><noparse><{global.player2KeyUP}></noparse></uppercase></color>
+      and to move your player down use: <color=yellow><uppercase><noparse><{global.player2KeyDOWN}></noparse></uppercase></color>.
+      Use these keys to hit the ball and score points against your opponent.'
+    m_Metadata:
+      m_Items:
+      - rid: 6127400222911627294
   references:
     version: 2
     RefIds:
     - rid: 6127400222911627294
       type: {class: SmartFormatTag, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_Entries: 00d0da4fc2010000
+        m_Entries: 00d0da4fc201000000d05a8b0800000000a049fcd2820300

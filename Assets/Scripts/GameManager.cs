@@ -31,8 +31,6 @@ public class GameManager : MonoBehaviour
     public TextMeshProUGUI settingsPlayerName2;
     public TextMeshProUGUI instructionsPlayerName1;
     public TextMeshProUGUI instructionsPlayerName2;
-    public TextMeshProUGUI instructionsKeyPlayer1;
-    public TextMeshProUGUI instructionsKeyPlayer2;
 
     public TextMeshProUGUI hudPointsPlayer1;
     public TextMeshProUGUI hudPointsPlayer2;
@@ -66,13 +64,9 @@ public class GameManager : MonoBehaviour
 
         // set as default values to play
         inputFieldPointsToWin.text = defaultPointsToWin.ToString();
-
         PlayerPrefs.SetInt("pointsToWin", defaultPointsToWin);
 
-        // update global variables to localization
-        var source = LocalizationSettings.StringDatabase.SmartFormatter.GetSourceExtension<PersistentVariablesSource>();
-        instructiuonsPointsToWin = source["global"]["pointsToWin"] as IntVariable;
-        instructiuonsPointsToWin.Value = PlayerPrefs.GetInt("pointsToWin");
+        GlobalPointsUpdate(PlayerPrefs.GetInt("pointsToWin"));
 
         PlayerPrefs.SetString("lastWinner", _lastWinner);
 
@@ -88,11 +82,18 @@ public class GameManager : MonoBehaviour
         instructionsPlayerName1.text= defaultPlayerName1.ToString();
         instructionsPlayerName2.text= defaultPlayerName2.ToString();
 
-        instructionsKeyPlayer1.text = instructionsKeyPlayer1.text.Replace("<KEYUP>", refPlayer1.keyCodeMoveUp.ToString());
-        instructionsKeyPlayer1.text = instructionsKeyPlayer1.text.Replace("<KEYDOWN>", refPlayer1.keycodeMoveDown.ToString());
-        instructionsKeyPlayer2.text = instructionsKeyPlayer2.text.Replace("<KEYUP>", refPlayer2.keyCodeMoveUp.ToString());
-        instructionsKeyPlayer2.text = instructionsKeyPlayer2.text.Replace("<KEYDOWN>", refPlayer2.keycodeMoveDown.ToString());
-
+        #region Global Player Keys Update
+        // update global variables to localization
+        var source = LocalizationSettings.StringDatabase.SmartFormatter.GetSourceExtension<PersistentVariablesSource>();
+        StringVariable _instructionsP1keyUP = source["global"]["player1KeyUP"] as StringVariable;
+        StringVariable _instructionsP1keyDOWN = source["global"]["player1KeyDOWN"] as StringVariable;
+        StringVariable _instructionsP2keyUP = source["global"]["player2KeyUP"] as StringVariable;
+        StringVariable _instructionsP2keyDOWN = source["global"]["player2KeyDOWN"] as StringVariable;
+        _instructionsP1keyUP.Value = refPlayer1.keyCodeMoveUp.ToString();
+        _instructionsP1keyDOWN.Value = refPlayer1.keycodeMoveDown.ToString();
+        _instructionsP2keyUP.Value = refPlayer2.keyCodeMoveUp.ToString();
+        _instructionsP2keyDOWN.Value = refPlayer2.keycodeMoveDown.ToString();
+        #endregion
     }
 
     #region General Manipulation
@@ -101,10 +102,7 @@ public class GameManager : MonoBehaviour
         _currentPointsToWin = inputFieldPointsToWin.text;
         PlayerPrefs.SetInt("pointsToWin", int.Parse(_currentPointsToWin));
 
-        // update global variables to localization
-        var source = LocalizationSettings.StringDatabase.SmartFormatter.GetSourceExtension<PersistentVariablesSource>();
-        instructiuonsPointsToWin = source["global"]["pointsToWin"] as IntVariable;
-        instructiuonsPointsToWin.Value = PlayerPrefs.GetInt("pointsToWin");
+        GlobalPointsUpdate(PlayerPrefs.GetInt("pointsToWin"));
 
         ResetBallPosition(PlayerPrefs.GetString("lastWinner"), false);
         refPlayer1.currentPoints = 0;
@@ -114,6 +112,13 @@ public class GameManager : MonoBehaviour
         scorePointsPlayer1.text = "0";
         scorePointsPlayer2.text = "0";
 
+    }
+    public void GlobalPointsUpdate(int points)
+    {
+        // update global variables to localization
+        var source = LocalizationSettings.StringDatabase.SmartFormatter.GetSourceExtension<PersistentVariablesSource>();
+        instructiuonsPointsToWin = source["global"]["pointsToWin"] as IntVariable;
+        instructiuonsPointsToWin.Value = points;
     }
 
     public void ResetBallPosition(string currentWay, bool moveBall)
