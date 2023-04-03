@@ -1,5 +1,6 @@
 # Clone Pong!
-> :construction: Project Under Construction :construction:
+
+The first stable and playable version is available for download at: https://emersonmistico.com.br/clone-pong-game
 
 This project was developed as part of the Unity course at E.B.A.C. It consists of a game inspired by the classic "Pong", originally released in 1972, with some small changes to the gameplay. The main goal of the project is to experiment with Unity and C# programming basics and to learn how to use GitHub for version control.
 
@@ -42,7 +43,7 @@ Good luck and have fun!
 
 # Italian: Clone Pong
 
-> :construction: Progetto in Costruzione :construction:
+La prima versione stabile e giocabile è disponibile per il download su: https://emersonmistico.com.br/clone-pong-game
 
 Questo progetto è stato sviluppato come parte del corso di Unity presso E.B.A.C. Consiste in un gioco ispirato al classico "Pong", originariamente rilasciato nel 1972, con alcune piccole modifiche al gameplay. Lo scopo principale del progetto è di sperimentare i concetti di base della programmazione in Unity e C# e di apprendere l'uso di GitHub per il controllo delle versioni.
 Inoltre, oltre ad implementare i meccanismi di gioco principali, esploreremo anche l'implementazione di un gestore di gioco e di macchine a stati finiti (FSM) per controllare il flusso e la logica di gioco.
