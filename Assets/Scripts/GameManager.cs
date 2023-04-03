@@ -21,16 +21,6 @@ public class GameManager : MonoBehaviour
     public IntVariable instructiuonsPointsToWin;
 
     public int defaultPointsToWin = 3;
-    public string defaultPlayerName1 = "Jogador 1";
-    public string defaultPlayerName2 = "Jogador 2";
-
-    [Header ("HudScreen References")]
-    public TextMeshProUGUI hudPlayerName1;
-    public TextMeshProUGUI hudPlayerName2;
-    public TextMeshProUGUI settingsPlayerName1;
-    public TextMeshProUGUI settingsPlayerName2;
-    public TextMeshProUGUI instructionsPlayerName1;
-    public TextMeshProUGUI instructionsPlayerName2;
 
     public TextMeshProUGUI hudPointsPlayer1;
     public TextMeshProUGUI hudPointsPlayer2;
@@ -44,6 +34,8 @@ public class GameManager : MonoBehaviour
     public GameObject uiEndGameMenu;
     public GameObject uiInstructionsScreen;
     public TextMeshProUGUI uiLastWinner;
+    public TextMeshProUGUI uiLastWinnerEndGame;
+
 
     [Header("Players references")]
     public Player refPlayer1;
@@ -61,20 +53,11 @@ public class GameManager : MonoBehaviour
         // set as default values to play
         inputFieldPointsToWin.text = defaultPointsToWin.ToString();
         PlayerPrefs.SetInt("pointsToWin", defaultPointsToWin);
-
         PlayerPrefs.SetString("lastWinner", "");
+        PlayerPrefs.SetString("namePlayer1", "");
+        PlayerPrefs.SetString("namePlayer2", "");
 
         GlobalPointsUpdate(PlayerPrefs.GetInt("pointsToWin"));
-
-        // update HUD and Menu point values and names
-        hudPlayerName1.text = defaultPlayerName1.ToString();
-        hudPlayerName2.text = defaultPlayerName2.ToString();
-        settingsPlayerName1.text = defaultPlayerName1.ToString();
-        settingsPlayerName2.text = defaultPlayerName2.ToString();
-        refPlayer1.name = defaultPlayerName1.ToString();
-        refPlayer2.name = defaultPlayerName2.ToString();
-        instructionsPlayerName1.text= defaultPlayerName1.ToString();
-        instructionsPlayerName2.text= defaultPlayerName2.ToString();
 
         #region Global Player Keys Update
         // update global variables to localization
@@ -142,6 +125,7 @@ public class GameManager : MonoBehaviour
     {
         PlayerPrefs.SetString("lastWinner", winnerPlayer);
         uiLastWinner.text = winnerPlayer;
+        uiLastWinnerEndGame.text = winnerPlayer;
         ballBase.ballCanMove(false);
         StateMachine.Instance.SwitchState(StateMachine.States.END_GAME);
     }

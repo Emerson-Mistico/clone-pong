@@ -15,8 +15,7 @@ public class BallBase : MonoBehaviour
 
     [Header("Ball Colision Setiings")]
     public Player playerToCheck;
-    public string keyToCheck = "Player";
-    public string wayToCheck = "Player 1";
+    public string wayToCheck = "Player1";
 
     [Header("Sound Effects")]
     [SerializeField] private AudioClip _clipWall, _clipPlayer;
@@ -38,7 +37,7 @@ public class BallBase : MonoBehaviour
         if (_ballCanMove)
         {
             transform.Translate(ballSpeed*Time.deltaTime);
-            wayToCheck = playerToCheck.name;
+            wayToCheck = playerToCheck.tag;
         } else
         {
             return;
@@ -58,7 +57,7 @@ public class BallBase : MonoBehaviour
 
         // Check who made the point for the advantage and direction of the initial shot of the ball
         if (currentWay != wayToCheck)
-        {
+        {            
             ballSpeed.x *= -1;
         }
         transform.position = _startPosition;
@@ -78,7 +77,8 @@ public class BallBase : MonoBehaviour
     // Checks if the collision is with a player to reverse the direction
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.tag == keyToCheck)
+        if (collision.gameObject.tag == "Player1" || 
+            collision.gameObject.tag == "Player2")
         {
             SoundManager.Instance.PlaySound(_clipPlayer);
             OnPlayerCollision();

@@ -16,16 +16,18 @@ MonoBehaviour:
     m_Code: pt-BR
   m_SharedData: {fileID: 11400000, guid: 8616d92d8e3a5804dbd3e81262c40e61, type: 2}
   m_Metadata:
-    m_Items: []
+    m_Items:
+    - rid: 6127400258540929032
   m_TableData:
   - m_Id: 365962043392
     m_Localized: "Configura\xE7\xF5es do jogador:"
     m_Metadata:
       m_Items: []
   - m_Id: 587303854080
-    m_Localized: Jogador
+    m_Localized: Jogador {number}
     m_Metadata:
-      m_Items: []
+      m_Items:
+      - rid: 6127400258540929032
   - m_Id: 669214416896
     m_Localized: Cor do jogador
     m_Metadata:
@@ -77,4 +79,8 @@ MonoBehaviour:
       m_Items: []
   references:
     version: 2
-    RefIds: []
+    RefIds:
+    - rid: 6127400258540929032
+      type: {class: SmartFormatTag, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_Entries: 00a009be88000000

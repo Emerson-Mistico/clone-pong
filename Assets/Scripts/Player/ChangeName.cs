@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using Unity.VisualScripting;
 
 public class ChangeName : MonoBehaviour
 {
@@ -23,12 +24,20 @@ public class ChangeName : MonoBehaviour
     }
 
     public void DoChangeName()
-    {
+    {        
         playerName = uiInputFieldName.text;
         uiTextName.text = playerName;
         uiHudTextName.text = playerName;
         player.name = playerName;
         instructionsPlayerName.text = playerName;
+
+        if (player.tag == "Player1")
+        {
+            PlayerPrefs.SetString("namePlayer1", playerName);
+        } else if (player.tag == "Player2") {
+            PlayerPrefs.SetString("namePlayer2", playerName);
+        }
+
     }
 
     

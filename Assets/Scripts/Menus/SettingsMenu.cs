@@ -12,6 +12,7 @@ public class SettingsMenu : MonoBehaviour
     void Update()
     {
         string _Winner = PlayerPrefs.GetString("lastWinner");
+
         if (_Winner != "")
         {
             uiNoWinnerMessage.SetActive(false);
