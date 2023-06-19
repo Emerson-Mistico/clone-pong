@@ -23,42 +23,49 @@ MonoBehaviour:
     m_SerializedLabels:
     - Locale-en
     - Preload
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: b498e54f416ffa848a777db73f0386e2
     m_Address: buttons_en
     m_ReadOnly: 1
     m_SerializedLabels:
     - Locale-en
     - Preload
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: c10e87d6d2ddd074bbfa711c29466e38
     m_Address: pauseMenu_en
     m_ReadOnly: 1
     m_SerializedLabels:
     - Locale-en
     - Preload
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: b75d3fb382396f24eab4cb7bb572e8e6
     m_Address: endGameMenu_en
     m_ReadOnly: 1
     m_SerializedLabels:
     - Locale-en
     - Preload
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: af2f7a15eb8e6184f8a25980f63559a9
     m_Address: settingsMenu_en
     m_ReadOnly: 1
     m_SerializedLabels:
     - Locale-en
     - Preload
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: b84899c1992e4b742aa3516d3362c944
     m_Address: instructionsScreen_en
     m_ReadOnly: 1
     m_SerializedLabels:
     - Locale-en
     - Preload
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 1e6858b75da716d4db7efe5764566463
     m_Address: creditsScreen_en
     m_ReadOnly: 1
     m_SerializedLabels:
     - Locale-en
     - Preload
+    FlaggedDuringContentUpdateRestriction: 0
   m_ReadOnly: 1
   m_Settings: {fileID: 11400000, guid: afedadd0a34324b45882fe362daea7ab, type: 2}
   m_SchemaSet:
