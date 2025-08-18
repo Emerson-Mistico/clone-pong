@@ -13,10 +13,28 @@ MonoBehaviour:
   m_Name: Localization-Assets-Shared
   m_EditorClassIdentifier: 
   m_GroupName: Localization-Assets-Shared
-  m_Data:
-    m_SerializedData: []
   m_GUID: 730fe07b332ff5e408b6e18465f017d7
   m_SerializeEntries:
+  - m_GUID: 00a35efc4b32db0438833956ca92725d
+    m_Address: Assets/LocalizationSettings/Tables/instructionsScreen Shared Data.asset
+    m_ReadOnly: 1
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 8616d92d8e3a5804dbd3e81262c40e61
+    m_Address: Assets/LocalizationSettings/Tables/settingsMenu Shared Data.asset
+    m_ReadOnly: 1
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 93466540172d76b49a5caca9d035059a
+    m_Address: Assets/LocalizationSettings/Tables/creditsScreen Shared Data.asset
+    m_ReadOnly: 1
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 97bc40b774d982945915c976a095661e
+    m_Address: Assets/LocalizationSettings/Tables/endGameMenu Shared Data.asset
+    m_ReadOnly: 1
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: c8ef6bb0667052d4da10ec3f22ec6179
     m_Address: Assets/LocalizationSettings/Tables/stringMessages Shared Data.asset
     m_ReadOnly: 1
@@ -29,26 +47,6 @@ MonoBehaviour:
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: dc66eb524150e344ba65add02a8e7c7a
     m_Address: Assets/LocalizationSettings/Tables/pauseMenu Shared Data.asset
-    m_ReadOnly: 1
-    m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 97bc40b774d982945915c976a095661e
-    m_Address: Assets/LocalizationSettings/Tables/endGameMenu Shared Data.asset
-    m_ReadOnly: 1
-    m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 8616d92d8e3a5804dbd3e81262c40e61
-    m_Address: Assets/LocalizationSettings/Tables/settingsMenu Shared Data.asset
-    m_ReadOnly: 1
-    m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 00a35efc4b32db0438833956ca92725d
-    m_Address: Assets/LocalizationSettings/Tables/instructionsScreen Shared Data.asset
-    m_ReadOnly: 1
-    m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 93466540172d76b49a5caca9d035059a
-    m_Address: Assets/LocalizationSettings/Tables/creditsScreen Shared Data.asset
     m_ReadOnly: 1
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0

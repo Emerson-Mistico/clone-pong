@@ -13,33 +13,17 @@ MonoBehaviour:
   m_Name: Localization-String-Tables-English (en)
   m_EditorClassIdentifier: 
   m_GroupName: Localization-String-Tables-English (en)
-  m_Data:
-    m_SerializedData: []
   m_GUID: d24d070395e5d3e42a42b025cda63d94
   m_SerializeEntries:
+  - m_GUID: 1e6858b75da716d4db7efe5764566463
+    m_Address: creditsScreen_en
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-en
+    - Preload
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 81467accfc5ddd245adb31c23dbf635e
     m_Address: stringMessages_en
-    m_ReadOnly: 1
-    m_SerializedLabels:
-    - Locale-en
-    - Preload
-    FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: b498e54f416ffa848a777db73f0386e2
-    m_Address: buttons_en
-    m_ReadOnly: 1
-    m_SerializedLabels:
-    - Locale-en
-    - Preload
-    FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: c10e87d6d2ddd074bbfa711c29466e38
-    m_Address: pauseMenu_en
-    m_ReadOnly: 1
-    m_SerializedLabels:
-    - Locale-en
-    - Preload
-    FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: b75d3fb382396f24eab4cb7bb572e8e6
-    m_Address: endGameMenu_en
     m_ReadOnly: 1
     m_SerializedLabels:
     - Locale-en
@@ -52,6 +36,20 @@ MonoBehaviour:
     - Locale-en
     - Preload
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: b498e54f416ffa848a777db73f0386e2
+    m_Address: buttons_en
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-en
+    - Preload
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: b75d3fb382396f24eab4cb7bb572e8e6
+    m_Address: endGameMenu_en
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-en
+    - Preload
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: b84899c1992e4b742aa3516d3362c944
     m_Address: instructionsScreen_en
     m_ReadOnly: 1
@@ -59,8 +57,8 @@ MonoBehaviour:
     - Locale-en
     - Preload
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 1e6858b75da716d4db7efe5764566463
-    m_Address: creditsScreen_en
+  - m_GUID: c10e87d6d2ddd074bbfa711c29466e38
+    m_Address: pauseMenu_en
     m_ReadOnly: 1
     m_SerializedLabels:
     - Locale-en

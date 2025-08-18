@@ -13,19 +13,10 @@ MonoBehaviour:
   m_Name: Localization-String-Tables-Portuguese (Brazil) (pt-BR)
   m_EditorClassIdentifier: 
   m_GroupName: Localization-String-Tables-Portuguese (Brazil) (pt-BR)
-  m_Data:
-    m_SerializedData: []
   m_GUID: 41d51157035942042a7326c7b431dd85
   m_SerializeEntries:
-  - m_GUID: 6696a3c672aa90b48a645e76500f8cb2
-    m_Address: stringMessages_pt-BR
-    m_ReadOnly: 1
-    m_SerializedLabels:
-    - Locale-pt-BR
-    - Preload
-    FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: dd77cfc0fba24ea4f87220b6aab9bc27
-    m_Address: buttons_pt-BR
+  - m_GUID: 217b4ef6fea4eb941ad3022c0d68cb67
+    m_Address: creditsScreen_pt-BR
     m_ReadOnly: 1
     m_SerializedLabels:
     - Locale-pt-BR
@@ -45,6 +36,13 @@ MonoBehaviour:
     - Locale-pt-BR
     - Preload
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 6696a3c672aa90b48a645e76500f8cb2
+    m_Address: stringMessages_pt-BR
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-pt-BR
+    - Preload
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 7cf32ec3a63354e499c38cbe95431cda
     m_Address: settingsMenu_pt-BR
     m_ReadOnly: 1
@@ -59,8 +57,8 @@ MonoBehaviour:
     - Locale-pt-BR
     - Preload
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 217b4ef6fea4eb941ad3022c0d68cb67
-    m_Address: creditsScreen_pt-BR
+  - m_GUID: dd77cfc0fba24ea4f87220b6aab9bc27
+    m_Address: buttons_pt-BR
     m_ReadOnly: 1
     m_SerializedLabels:
     - Locale-pt-BR

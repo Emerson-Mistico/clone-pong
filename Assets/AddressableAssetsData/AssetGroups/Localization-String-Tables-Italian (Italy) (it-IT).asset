@@ -13,26 +13,10 @@ MonoBehaviour:
   m_Name: Localization-String-Tables-Italian (Italy) (it-IT)
   m_EditorClassIdentifier: 
   m_GroupName: Localization-String-Tables-Italian (Italy) (it-IT)
-  m_Data:
-    m_SerializedData: []
   m_GUID: 7490dbddabf063f4f9e9c5accbad71a9
   m_SerializeEntries:
-  - m_GUID: f519c9920c2d5884cb54170f94951d27
-    m_Address: stringMessages_it-IT
-    m_ReadOnly: 1
-    m_SerializedLabels:
-    - Locale-it-IT
-    - Preload
-    FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 50c82311e77fb4c41b20a48dcedc604b
-    m_Address: buttons_it-IT
-    m_ReadOnly: 1
-    m_SerializedLabels:
-    - Locale-it-IT
-    - Preload
-    FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: b5635700ba7f12444ba81ae41aec582f
-    m_Address: pauseMenu_it-IT
+  - m_GUID: 26727b6bddd8b6841890e9f3315a9b85
+    m_Address: creditsScreen_it-IT
     m_ReadOnly: 1
     m_SerializedLabels:
     - Locale-it-IT
@@ -40,6 +24,13 @@ MonoBehaviour:
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 337c37b9b4b9c5140abdde630c59acdb
     m_Address: endGameMenu_it-IT
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-it-IT
+    - Preload
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 50c82311e77fb4c41b20a48dcedc604b
+    m_Address: buttons_it-IT
     m_ReadOnly: 1
     m_SerializedLabels:
     - Locale-it-IT
@@ -59,8 +50,15 @@ MonoBehaviour:
     - Locale-it-IT
     - Preload
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 26727b6bddd8b6841890e9f3315a9b85
-    m_Address: creditsScreen_it-IT
+  - m_GUID: b5635700ba7f12444ba81ae41aec582f
+    m_Address: pauseMenu_it-IT
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-it-IT
+    - Preload
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: f519c9920c2d5884cb54170f94951d27
+    m_Address: stringMessages_it-IT
     m_ReadOnly: 1
     m_SerializedLabels:
     - Locale-it-IT
